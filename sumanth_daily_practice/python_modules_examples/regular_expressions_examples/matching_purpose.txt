@@ -1,0 +1,5 @@
+sumanth is passed Btech
+mahesh is passed Btech
+person is failed Btech
+ravi is passed Btech
+xperson is failed Btech

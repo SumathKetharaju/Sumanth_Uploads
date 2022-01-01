@@ -1,0 +1,37 @@
+WARNING:root:This is warning message
+ERROR:root:This is error message
+CRITICAL:root:This is critical message
+INFO:root:This is Information message
+WARNING:root:This is warning message
+ERROR:root:This is error message
+CRITICAL:root:This is critical message
+INFO:root:This is Information message
+WARNING:root:This is warning message
+DEBUG:root:This is debug message
+ERROR:root:This is error message
+CRITICAL:root:This is critical message
+WARNING:root:This is warning message
+ERROR:root:This is error message
+CRITICAL:root:This is critical message
+ERROR:root:This is error message
+CRITICAL:root:This is critical message
+2021-11-29 11:41:00,785 : DEBUG : This is Information message
+2021-11-29 11:41:00,785 : DEBUG : This is debug message
+2021-11-29 11:41:00,785 : DEBUG : This is warning message
+2021-11-29 11:41:00,785 : DEBUG : This is error message
+2021-11-29 11:41:00,785 : DEBUG : This is critical message
+2021-11-29 11:41:24,912 : DEBUG : This is Information message
+2021-11-29 11:41:24,913 : INFO : This is debug message
+2021-11-29 11:41:24,913 : DEBUG : This is warning message
+2021-11-29 11:41:24,913 : DEBUG : This is error message
+2021-11-29 11:41:24,913 : DEBUG : This is critical message
+2021-11-29 11:41:49,359 : DEBUG : This is Information message
+2021-11-29 11:41:49,359 : INFO : This is debug message
+2021-11-29 11:41:49,359 : WARNING : This is warning message
+2021-11-29 11:41:49,359 : ERROR : This is error message
+2021-11-29 11:41:49,359 : CRITICAL : This is critical message
+2021-11-29 11:42:24,717 : DEBUG : This is Information message
+2021-11-29 11:42:24,717 : INFO : This is debug message
+2021-11-29 11:42:24,717 : WARNING : This is warning message
+2021-11-29 11:42:24,717 : ERROR : This is error message
+2021-11-29 11:42:24,717 : CRITICAL : This is critical message

@@ -1,0 +1,16 @@
+2021-08-20 11:03:30,876 : DEBUG : The sum is 12
+2021-08-20 11:03:30,876 : DEBUG : The subtraction is  is 8
+2021-08-20 11:03:30,876 : DEBUG : The multiplication is 20
+2021-08-20 11:03:30,876 : DEBUG : The division is 5.0
+2021-08-20 11:05:53,106 : INFO : The sum is 12
+2021-08-20 11:05:53,106 : INFO : The subtraction is  is 8
+2021-08-20 11:05:53,106 : INFO : The multiplication is 20
+2021-08-20 11:05:53,106 : INFO : The division is 5.0
+2021-08-20 11:06:21,134 : INFO : The sum is 12
+2021-08-20 11:06:21,134 : INFO : The subtraction is 8
+2021-08-20 11:06:21,134 : INFO : The multiplication is 20
+2021-08-20 11:06:21,134 : INFO : The division is 5.0
+2021-08-20 11:11:07,469 : WARNING : The sum is 12
+2021-08-20 11:11:07,469 : WARNING : The subtraction is 8
+2021-08-20 11:11:07,469 : WARNING : The multiplication is 20
+2021-08-20 11:11:07,469 : WARNING : The division is 5.0

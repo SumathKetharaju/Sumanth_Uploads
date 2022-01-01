@@ -1,0 +1,34 @@
+json commands:
+json.load(json_file) --> It reads data from json_file
+json.dump(data, json_file) --> It write data to json_file
+json.loads() --> it converts json object to python object
+json.dumps() --> it converts python object to json object
+
+-------------------------------------------------------------------------------------------------
+os commands:
+os.listdir()
+os.chdir()
+os.mkdir()
+os.rmdir()
+
+--------------------------------------------------------------------------------------------------
+logging commands:
+DEBUG - Detailed information,typically of interest only when diagnosis problems
+INFO - conformation that things are working as expected.
+ERROR
+WARNING
+
+logging.basicConfig(filename= "", level="", format="")
+logging.debug()
+logging.info()
+logging.warning
+
+------------------------------------------------------------------------------------------------------
+requests commands:
+requests.status_code
+requests.test
+requests.content
+requests.ok
+requests.url
+
+------------------------------------------------------------------------------------------------------
