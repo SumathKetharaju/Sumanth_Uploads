@@ -1,0 +1,46 @@
+ Volume in drive C is ssd
+ Volume Serial Number is B60B-D8FB
+
+ Directory of C:\Users\SUMANTH\Desktop\sumanth_difficult_programs
+
+11-08-2021  17:01    <DIR>          .
+11-08-2021  17:01    <DIR>          ..
+11-08-2021  16:26    <DIR>          .idea
+23-07-2021  09:15    <DIR>          .pytest_cache
+17-07-2021  19:23               381 bana1.py
+17-07-2021  20:04               334 check_json_file_example.py
+10-07-2021  09:15               329 check_yaml_example.py
+10-07-2021  16:02               626 copt_to_clipboard_example.py
+10-07-2021  16:02             1,884 copy_cwd_to_clipboard_example.py
+10-07-2021  16:17               772 currncy_example.py
+10-08-2021  10:29               938 data.json
+29-07-2021  12:48               811 date_time_example.py
+10-08-2021  17:33               185 employee.log
+10-08-2021  10:27               763 file.json
+10-08-2021  17:05               495 file.log
+10-08-2021  09:10             1,140 file.py
+09-07-2021  19:33                 0 hello.txt
+10-07-2021  09:39               404 image_convert_to_jpg_example.py
+10-08-2021  11:35             1,260 json_loads_and_dumps_method_example.py
+10-07-2021  09:34               959 json_to_yaml_example.py
+10-08-2021  17:33               848 logging_example2.py
+10-08-2021  17:05             1,697 loggoing_example.py
+10-07-2021  17:35             1,290 minion_game_example.py
+10-07-2021  16:16               883 nato_alphabet_example.py
+25-07-2021  17:15    <DIR>          nmap
+24-07-2021  19:51             1,123 nmap_example.py
+23-07-2021  09:12               428 nmap_example2.py
+11-08-2021  17:01                 0 output.txt
+09-08-2021  11:58               450 paramiko_example.py
+31-07-2021  10:48             3,942 practice_file.py
+10-07-2021  16:19             1,465 quick_math_example.py
+10-08-2021  10:22               741 read_json_file.py
+11-08-2021  11:12             1,241 requests_example.py
+11-08-2021  11:07               796 requests_example2.py
+11-08-2021  10:09             9,262 sample.jpeg
+11-08-2021  17:01             1,380 subprocess_module_example.py
+23-07-2021  10:49               443 winrm_example.py
+10-08-2021  10:29               162 write_to_json_file.py
+10-07-2021  09:35               965 yaml_to_json_example.py
+              34 File(s)         38,397 bytes
+               5 Dir(s)  201,194,967,040 bytes free

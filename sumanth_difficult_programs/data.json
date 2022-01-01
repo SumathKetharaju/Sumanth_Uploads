@@ -1,0 +1,38 @@
+{
+    "Credentials": [
+        {
+            "Father": "kamal",
+            "Mother": "Praneetha"
+        }
+    ],
+    "Details": [
+        {
+            "Age": 24,
+            "Behavior": "Not bad",
+            "Location": "Buchireddypalem",
+            "Name": "Sumanth",
+            "Role": "Test Engineer"
+        },
+        {
+            "Age": 22,
+            "Behavior": "Not bad",
+            "Location": "Narayanreddypeta",
+            "Name": "Sunil",
+            "Role": "Completed B-tech"
+        },
+        {
+            "Age": 26,
+            "Behavior": "Not bad",
+            "Location": "Buchreddypalem",
+            "Name": "Ravindra",
+            "Role": "Working in shop"
+        },
+        {
+            "Age": 21,
+            "Behavior": "Not bad",
+            "Location": "Narayanreddypeta",
+            "Name": "Sudheer",
+            "Role": "Studying Degree"
+        }
+    ]
+}
