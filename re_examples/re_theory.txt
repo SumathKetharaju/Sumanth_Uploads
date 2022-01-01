@@ -1,0 +1,35 @@
+re -->
+metacharacters -->
+^
+*
++
+?
+\
+|
+.
+[]
+()
+{}
+$
+special sequences -->
+\A
+\b
+\B
+\d
+\D
+\s
+\S
+\Z
+methods to match strings -->
+compile()
+finditer()
+findall()
+match()
+sub()
+subn()
+search()
+after matching strings we need access particular one based upon our needs
+group()
+groups()
+start_index()
+end_index()

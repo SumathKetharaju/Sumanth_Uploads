@@ -1,0 +1,19 @@
+sumanth is passed
+person1 is failed
+mahesh is passed
+person2 is failed
+bharath is passed
+person3 is failed
+avinash is passed
+person4 is failed
+visweswar is passed
+
+6300906155
+4984569856466854985
+916300906155
+5165484564584848
+9548484848
+9800562143
+919800562143
+8900562143
+918900562143
