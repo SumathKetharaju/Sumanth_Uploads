@@ -1,0 +1,2 @@
+import tuple
+type(tuple)
