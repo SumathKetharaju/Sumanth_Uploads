@@ -1,0 +1,31 @@
+2022-04-11 12:42:18,063:DEBUG:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+2022-04-11 12:42:18,063:DEBUG:root:CreatedEmployee Full Name is --> Taraka.Ramaro and Email is --> Taraka.Ramaro@gmail.com
+2022-04-11 12:42:18,063:DEBUG:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+2022-04-11 12:43:12,324:DEBUG:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+2022-04-11 12:43:12,324:DEBUG:root:CreatedEmployee Full Name is --> Taraka.Ramaro and Email is --> Taraka.Ramaro@gmail.com
+2022-04-11 12:43:12,325:DEBUG:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+2022-04-11 12:43:12,325:DEBUG:root:------------------------------ This is logging debug level ----------------------------------------
+2022-04-11 12:43:12,325:DEBUG:root:The addition of two numbers 40 and 20 is --> 60
+2022-04-11 12:43:12,325:DEBUG:root:The subtraction of two numbers 40 and 20 is --> 20
+2022-04-11 12:43:12,325:DEBUG:root:The multiplication of two numbers 40 and 20 is --> 800
+2022-04-11 12:43:12,325:DEBUG:root:The division of two numbers 40 and 20 is --> 2.0
+2022-04-11 12:43:12,325:INFO:root:------------------------------ This is logging Info level ----------------------------------------
+2022-04-11 12:43:12,325:INFO:root:The addition of two numbers 40 and 20 is --> 60
+2022-04-11 12:43:12,325:INFO:root:The subtraction of two numbers 40 and 20 is --> 20
+2022-04-11 12:43:12,325:INFO:root:The multiplication of two numbers 40 and 20 is --> 800
+2022-04-11 12:43:12,325:INFO:root:The division of two numbers 40 and 20 is --> 2.0
+2022-04-11 12:43:12,325:WARNING:root:------------------------------ This is logging warning level ----------------------------------------
+2022-04-11 12:43:12,325:WARNING:root:The addition of two numbers 40 and 20 is --> 60
+2022-04-11 12:43:12,325:WARNING:root:The subtraction of two numbers 40 and 20 is --> 20
+2022-04-11 12:43:12,325:WARNING:root:The multiplication of two numbers 40 and 20 is --> 800
+2022-04-11 12:43:12,325:WARNING:root:The division of two numbers 40 and 20 is --> 2.0
+2022-04-11 12:43:12,325:ERROR:root:------------------------------ This is logging error level ----------------------------------------
+2022-04-11 12:43:12,325:ERROR:root:The addition of two numbers 40 and 20 is --> 60
+2022-04-11 12:43:12,325:ERROR:root:The subtraction of two numbers 40 and 20 is --> 20
+2022-04-11 12:43:12,325:ERROR:root:The multiplication of two numbers 40 and 20 is --> 800
+2022-04-11 12:43:12,325:ERROR:root:The division of two numbers 40 and 20 is --> 2.0
+2022-04-11 12:43:12,325:CRITICAL:root:---------------------------- This is logging critical level ------------------------------------
+2022-04-11 12:43:12,325:CRITICAL:root:The addition of two numbers 40 and 20 is --> 60
+2022-04-11 12:43:12,325:CRITICAL:root:The subtraction of two numbers 40 and 20 is --> 20
+2022-04-11 12:43:12,325:CRITICAL:root:The multiplication of two numbers 40 and 20 is --> 800
+2022-04-11 12:43:12,325:CRITICAL:root:The division of two numbers 40 and 20 is --> 2.0

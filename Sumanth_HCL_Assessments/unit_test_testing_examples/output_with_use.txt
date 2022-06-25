@@ -1,0 +1,217 @@
+Microsoft Windows [Version 10.0.19043.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are not able to run that test script using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_student_class.py
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are not able to run that test script using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_student_class.py -v
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are able to run that test script with verbosity only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_student_class.py -v
+test_full_name (test_student_class.TestStudent) ... ok
+test_mail_id (test_student_class.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are able to run that test script without verbosity only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_student_class.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are not able to run that test script using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.py
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we do not use if __name__ == "__main__" in our script then
+we are able to run that test script without verbosity only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_student_class.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__" in our script then
+we are able to run that test script with verbosity(with filename) only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_student_class.py -v
+test_full_name (test_student_class.TestStudent) ... ok
+test_mail_id (test_student_class.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__" in our script then
+we are able to run that test script with verbosity(without filename) only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_student_class.py -v
+test_full_name (__main__.TestStudent) ... ok
+test_mail_id (__main__.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__" in our script then
+we are able to run that test script without verbosity only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_student_class.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__" in our script then
+we are able to run that test script without verbosity only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script then
+we are able to run that test script with verbosity(without filename) only using below command in cmd"""
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.py -v
+test_list_index (__main__.TestStudent) ... ok
+test_list_slicing (__main__.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run all the test files within a directory
+we will use below command in cmd then
+only we are able to run that test script with verbosity(with filename) only """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest -v
+test_list_index (test_list_methods.TestStudent) ... ok
+test_list_slicing (test_list_methods.TestStudent) ... ok
+test_full_name (test_student_class.TestStudent) ... ok
+test_mail_id (test_student_class.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run particular test method within a directory
+we did not use below command in cmd because
+we are not able to run that test script with verbosity(without filename)  """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.test_list_slicing -v
+python: can't open file 'C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples\test_list_methods.test_list_slicing': [Errno 2] No such file or directory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run particular test method within a directory
+we did not use below command in cmd because
+we are not able to run that test script with verbosity(without filename) """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.TestStudent.test_list_slicing -v
+python: can't open file 'C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples\test_list_methods.TestStudent.test_list_slicing': [Errno 2] No such file or directory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run particular test method within a directory
+we did not use below command in cmd because
+we are not able to run that test script with verbosity(without filename) """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python test_list_methods.TestList.test_list_slicing -v
+python: can't open file 'C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples\test_list_methods.TestList.test_list_slicing': [Errno 2] No such file or directory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run particular test method within a directory
+we will use below command in cmd then
+only we are able to run that test script with verbosity(with filename) """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_list_methods.TestList.test_list_slicing -v
+test_list_slicing (test_list_methods.TestList) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"""reason --> if we use if __name__ == "__main__": in our script and if we want to run particular test class within a directory
+we will use below command in cmd then
+only we are able to run that test script with verbosity(with filename) """
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_testing_examples>python -m unittest test_list_methods.TestList -v
+test_list_index (test_list_methods.TestList) ... ok
+test_list_slicing (test_list_methods.TestList) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

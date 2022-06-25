@@ -1,0 +1,10 @@
+We can use any text editing software to write a Python script file.
+
+We just need to save it with the .py extension. But using an IDE can make our life a lot easier. IDE is a piece of
+software that provides useful features like code hinting, syntax highlighting and checking, file explorers, etc. to the
+ programmer for application development.
+
+By the way, when you install Python, an IDE named IDLE is also installed. You can use it to run Python on your computer.
+ It's a decent IDE for beginners.
+
+When you open IDLE, an interactive Python Shell is opened.

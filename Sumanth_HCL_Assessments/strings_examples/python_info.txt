@@ -1,0 +1,11 @@
+Portable --> Portable means we can take the code on any malayalam hardware and it will run, why Python is portable because that
+Python code get converted into byte, that means our source code(a.py file) is not directly run at hardware rather than
+this code will be converted into a compile code with extension .pyc file (compiled code) and this compiled code is an
+intermediate instruction and this intermediate instruction is known as byte code and byte code is assembly language and
+this instructions are directly map into mam the hardware until and unless they will not interpreted so here the interpreter
+will come into the picture and the of this interpreter is to interpret the byte code to the target machine, so the
+reason behind this is all the source code is first converted to assembly code that is byte code and the byte code are
+platform independent they are independent on the hardware and madam operating system and to run this byte code only the target
+machine that is virtual machine to understand that byte code. So, byte code is going to be converting the machine code
+by the reason is there is python virtual machine and that virtual dad machine has an interpreter and that interpreter is
+converting the byte code to machine and that’s how our code is portable it consists of byte code not machine code.

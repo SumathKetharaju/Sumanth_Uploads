@@ -1,0 +1,108 @@
+Microsoft Windows [Version 10.0.19043.1645]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\selenium_with_unittest>python -m unitest test_facebook_options -v
+C:\Python\python.exe: No module named unitest
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\selenium_with_unittest>python -m unittest test_facebook_options -v
+test_day (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:50923/devtools/browser/0d7eb25f-9987-4196-9342-ceba678a8b19
+ok
+test_first_name (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:50948/devtools/browser/e85936c9-4aa8-414e-9c58-3da9604030a1
+ok
+test_gender (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:50973/devtools/browser/61bdd030-d5ed-45ee-a706-ebf98ec79a2e
+[13564:4664:0426/100818.366:ERROR:device_event_log_impl.cc(214)] [10:08:18.366] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[13564:4664:0426/100818.369:ERROR:device_event_log_impl.cc(214)] [10:08:18.369] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+ERROR
+test_last_name (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:50998/devtools/browser/81e5e3c5-abf8-4199-be1f-bcd768861bd8
+ok
+test_month (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51025/devtools/browser/66f811f2-2ce6-49ad-9bac-53f4f77ad7fb
+ok
+test_password (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51050/devtools/browser/f9512dbb-9e69-4732-b476-2f8c730f5a42
+ok
+test_title (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51076/devtools/browser/0edfe770-7273-4d47-9165-707bc8d41233
+ok
+test_year (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51101/devtools/browser/40196f87-ae9c-42f4-a0be-cb38d744db08
+ok
+
+======================================================================
+ERROR: test_gender (test_facebook_options.SearchTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\selenium_with_unittest\test_facebook_options.py", line 51, in test_gender
+    self.gender = self.driver.find_element(By.XPATH, "//*[@id='u_g_3_RN']")
+  File "C:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='u_g_3_RN']"}
+  (Session info: chrome=100.0.4896.127)
+Stacktrace:
+Backtrace:
+        Ordinal0 [0x00489943+2595139]
+        Ordinal0 [0x0041C9F1+2148849]
+        Ordinal0 [0x00314528+1066280]
+        Ordinal0 [0x00340FD4+1249236]
+        Ordinal0 [0x003411CB+1249739]
+        Ordinal0 [0x0036D812+1431570]
+        Ordinal0 [0x0035BA34+1358388]
+        Ordinal0 [0x0036BAF2+1424114]
+        Ordinal0 [0x0035B806+1357830]
+        Ordinal0 [0x00336086+1204358]
+        Ordinal0 [0x00336F96+1208214]
+        GetHandleVerifier [0x0062B232+1658114]
+        GetHandleVerifier [0x006E312C+2411516]
+        GetHandleVerifier [0x0051F261+560433]
+        GetHandleVerifier [0x0051E366+556598]
+        Ordinal0 [0x0042286B+2173035]
+        Ordinal0 [0x004275F8+2192888]
+        Ordinal0 [0x004276E5+2193125]
+        Ordinal0 [0x004311FC+2232828]
+        BaseThreadInitThunk [0x7711FA29+25]
+        RtlGetAppContainerNamedObjectPath [0x776D7A7E+286]
+        RtlGetAppContainerNamedObjectPath [0x776D7A4E+238]
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 51.818s
+
+FAILED (errors=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\selenium_with_unittest>python -m unittest test_facebook_options -v
+test_day (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51130/devtools/browser/7fd9c52d-3c79-4c93-b4f8-029eebe94978
+ok
+test_first_name (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51156/devtools/browser/fc75bb8f-bacb-400d-8411-20f242c52b20
+ok
+test_last_name (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51181/devtools/browser/d121f757-174c-4a4f-b7d5-7ea41e154e1e
+ok
+test_month (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51206/devtools/browser/5af5a983-efde-4484-b595-7ff98e7ba282
+ok
+test_password (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51231/devtools/browser/4b08fb8e-5997-468e-9d96-991ef3eac915
+ok
+test_title (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51256/devtools/browser/6517e755-a678-4c7a-bb86-6c2b24526533
+ok
+test_year (test_facebook_options.SearchTest) ...
+DevTools listening on ws://127.0.0.1:51281/devtools/browser/a3ef6130-37ab-4874-ba67-10b489f92402
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 43.799s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\selenium_with_unittest>

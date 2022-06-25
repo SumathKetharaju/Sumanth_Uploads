@@ -1,0 +1,583 @@
+Microsoft Windows [Version 10.0.19043.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest discover
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest
+F....
+======================================================================
+FAIL: test_islower (test_sample.TestStringMethods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_sample.py", line 18, in test_islower
+    self.assertTrue("fOo".islower())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v test_sample.TestStringMethods
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v test_sample.TestStringMethods.test_split
+test_split (test_sample.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>Python -m unittest -h
+usage: python.exe -m unittest [-h] [-v] [-q] [--locals] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [tests ...]
+
+positional arguments:
+  tests                a list of any number of test modules, classes and test methods.
+
+optional arguments:
+  -h, --help           show this help message and exit
+  -v, --verbose        Verbose output
+  -q, --quiet          Quiet output
+  --locals             Show local variables in tracebacks
+  -f, --failfast       Stop on first fail or error
+  -c, --catch          Catch Ctrl-C and display results so far
+  -b, --buffer         Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS  Only run tests which match the given substring
+
+Examples:
+  python.exe -m unittest test_module               - run tests from test_module
+  python.exe -m unittest module.TestClass          - run tests from module.TestClass
+  python.exe -m unittest module.Class.test_method  - run specified test method
+  python.exe -m unittest path/to/test_file.py      - run tests from test_file.py
+
+usage: python.exe -m unittest discover [-h] [-v] [-q] [--locals] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [-s START] [-p PATTERN] [-t TOP]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --verbose         Verbose output
+  -q, --quiet           Quiet output
+  --locals              Show local variables in tracebacks
+  -f, --failfast        Stop on first fail or error
+  -c, --catch           Catch Ctrl-C and display results so far
+  -b, --buffer          Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS   Only run tests which match the given substring
+  -s START, --start-directory START
+                        Directory to start discovery ('.' default)
+  -p PATTERN, --pattern PATTERN
+                        Pattern to match tests ('test*.py' default)
+  -t TOP, --top-level-directory TOP
+                        Top level directory of project (defaults to start directory)
+
+For test discovery all test modules must be importable from the top level directory of the project.
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.006s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... FAIL
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_boolean (test_string_methods.StringMethods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_string_methods.py", line 12, in test_boolean
+    self.assertEqual(a, b)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... FAIL
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_boolean (test_string_methods.StringMethods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_string_methods.py", line 12, in test_boolean
+    self.assertEqual(a, b)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... FAIL
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_rectangle (test_triangle.TestingStrings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_triangle.py", line 12, in test_rectangle
+    self.assertEqual(find_areas.rectangle(6, 7), 27)
+AssertionError: 42 != 27
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m -v
+C:\Python\python.exe: No module named -v
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m -v test_triangle
+C:\Python\python.exe: No module named -v
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m test_triangle
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m test_triangle -v
+test_rectangle (__main__.TestingStrings) ... ok
+test_square (__main__.TestingStrings) ... ok
+test_triangle (__main__.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest test_triangle -v
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest test_triangle.test_square -v
+test_square (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_square (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+AttributeError: module 'test_triangle' has no attribute 'test_square'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest test_triangle.TestingStrings.test_square -v
+test_square (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest test_triangle.TestingStrings.test_square test_triangle.TestingStrings.test_triangle -v
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_error (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.012s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_error (test_assert_methods.AssertsTesting) ... FAIL
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_error (test_assert_methods.AssertsTesting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_assert_methods.py", line 25, in test_error
+    self.assertRaises(ValueError, find_areas.get_perimeter, 10, 5)
+AssertionError: ValueError not raised by get_perimeter
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.013s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... ok
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.003s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... FAIL
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_value_error_using_with (test_assert_methods.AssertsTesting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_assert_methods.py", line 29, in test_value_error_using_with
+    find_areas.get_perimeter(10, 5)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.013s
+
+FAILED (failures=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.011s
+
+OK (skipped=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_skip_if (test_assert_methods.AssertsTesting) ... FAIL
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_value_error_using_skip_if (test_assert_methods.AssertsTesting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_assert_methods.py", line 36, in test_value_error_using_skip_if
+    find_areas.get_perimeter(10, 5)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.014s
+
+FAILED (failures=1, skipped=1)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_skip_if (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.014s
+
+OK (skipped=2)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_skip_if (test_assert_methods.AssertsTesting) ... skipped 'This Test is also Temporarily Skipped'
+test_value_error_using_skip_unless (test_assert_methods.AssertsTesting) ... FAIL
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+======================================================================
+FAIL: test_value_error_using_skip_unless (test_assert_methods.AssertsTesting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\test_assert_methods.py", line 41, in test_value_error_using_skip_unless
+    find_areas.get_perimeter(20, 5)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.015s
+
+FAILED (failures=1, skipped=2)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>python -m unittest -v
+test_assert_false (test_assert_methods.AssertsTesting) ... ok
+test_assert_true (test_assert_methods.AssertsTesting) ... ok
+test_equal (test_assert_methods.AssertsTesting) ... ok
+test_not_equal (test_assert_methods.AssertsTesting) ... ok
+test_perimeter (test_assert_methods.AssertsTesting) ... ok
+test_value_error (test_assert_methods.AssertsTesting) ... ok
+test_value_error_using_skip_if (test_assert_methods.AssertsTesting) ... skipped 'This Test is also Temporarily Skipped'
+test_value_error_using_skip_unless (test_assert_methods.AssertsTesting) ... skipped 'Requires windows'
+test_value_error_using_with (test_assert_methods.AssertsTesting) ... skipped 'This Test is Temporarily Skipped'
+test_islower (test_sample.TestStringMethods) ... ok
+test_isupper (test_sample.TestStringMethods) ... ok
+test_lower (test_sample.TestStringMethods) ... ok
+test_split (test_sample.TestStringMethods) ... ok
+test_upper (test_sample.TestStringMethods) ... ok
+test_boolean (test_string_methods.StringMethods) ... ok
+test_capital (test_string_methods.StringMethods) ... ok
+test_is_digit (test_string_methods.StringMethods) ... ok
+test_string (test_strings.TestingStrings) ... ok
+test_rectangle (test_triangle.TestingStrings) ... ok
+test_square (test_triangle.TestingStrings) ... ok
+test_triangle (test_triangle.TestingStrings) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.011s
+
+OK (skipped=3)
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples>

@@ -1,0 +1,14 @@
+{
+  "student": [
+    {
+      "name": "Mahesh Babu",
+      "email": "MaheshBabu@gmail.com",
+      "has_license": false
+    },
+    {
+      "name": "Ram Charan",
+      "email": null,
+      "has_license": true
+    }
+  ]
+}

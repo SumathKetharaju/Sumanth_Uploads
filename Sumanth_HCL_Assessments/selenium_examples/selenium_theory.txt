@@ -1,0 +1,75 @@
+Functional Automation and testing --> (Application throughout the project life cycle, capable of automatic result measurement,
+provides application grade test, white box)
+
+Building a functional testing plan --> (Teat object identification, Test construction, Teat execution, project creation,
+Test automation, Checking results)
+
+selenium -->
+Selenium is an open-source (free) automated testing framework for validating web applications across multiple browsers and platforms.
+
+selenium disadvantages --> (cannot fully automation testing, no test management facilities, no support for test and result sharing,
+no support for running parallel tests on a single machine)
+
+selenium benifits -->
+1.Free download and support, runs tests under multiple browsers,
+2.works with popular programming languages,
+3.integrates well with popular tools
+
+Steps for implementing selenium test -->
+1.create webdriver instance
+2.Navigate to a web page
+3.locate html element on the web page
+4.perform an action on an HTML element
+5.Anticipate browser response to the action
+6.Run tests and record results
+8.conclude tests
+
+selenium webdriver -->
+1.open source
+2.supports all key browsers
+3.Easy to integrate with testing frameworks
+4.Direct communication between code and browser
+5.Requires no middle man
+6.Provides parallel testing capabilities
+
+selenium webdriver architecture -->
+selenium_commands <-------> browsers
+
+selenium webdriver differences from selenium Rc -->
+1.Supports testing iOS and Android applications
+2.Interacts natively with browser applications
+3.Faster than rc
+4.Does not require starting server before execution
+5.Supports all browsers
+6.Does not support record and playback
+
+selenium Features -->
+1.open source
+2.supports multiple opearating systems, browsers, and languages
+3.supports parallel test execution
+4.High integration capabilty
+5.Teat scrips directly interact with browser
+
+Test supports for selenium -->
+1.Smoke Testing
+2.UI Testing
+3.regression Testing
+4.sanity Testing
+5.database Testing
+
+selenium test life cycle -->
+1.Decision to automate testing
+2.test tool acquisition
+3.Automated testing introduction process
+4.Test planning, design and development
+5.Execution and management of tests
+6.Test program review and assessment
+
+Steps involved in implementing the test automation process -->
+1.Determining scope and test planning  (Get application environment, Analyze AUT, Select test cases for automation)
+2.Generating basic tests  (for selenium webdrivers --> using element locators, using web driver methods)
+3.Enhancing tests  (for selenium webdrivers --> using java conditional statements, using TestNg assertion methods)
+4.Running and debugging tests
+5.Analysing the test results and reporting defects
+
+

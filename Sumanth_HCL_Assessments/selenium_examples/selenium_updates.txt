@@ -1,0 +1,63 @@
+This error message...
+
+DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+...implies that the find_element_by_* commands are deprecated in the latest Selenium Python libraries.
+
+As @AutomatedTester mentions: This DeprecationWarning was the reflection of the changes made with respect to the decision to simplify the APIs across the languages and this does that.
+
+Solution
+Instead you have to use find_element(). As an example:
+
+You have to include the following imports
+
+from selenium.webdriver.common.by import By
+Using class_name:
+
+button = driver.find_element_by_class_name("quiz_button")
+Needs be replaced with:
+
+button = driver.find_element(By.CLASS_NAME, "quiz_button")
+In similar lines you also have to change the following:
+
+Using id:
+
+element = find_element_by_id("element_id")
+Needs be replaced with:
+
+element = driver.find_element(By.ID, "element_id")
+Using name:
+
+element = find_element_by_name("element_name")
+Needs be replaced with:
+
+element = driver.find_element(By.NAME, "element_name")
+Using link_text:
+
+element = find_element_by_link_text("element_link_text")
+Needs be replaced with:
+
+element = driver.find_element(By.LINK_TEXT, "element_link_text")
+Using partial_link_text:
+
+element = find_element_by_partial_link_text("element_partial_link_text")
+Needs be replaced with:
+
+element = driver.find_element(By.PARTIAL_LINK_TEXT, "element_partial_link_text")
+Using tag_name:
+
+element = find_element_by_tag_name("element_tag_name")
+Needs be replaced with:
+
+element = driver.find_element(By.TAG_NAME, "element_tag_name")
+Using css_selector:
+
+element = find_element_by_css_selector("element_css_selector")
+Needs be replaced with:
+
+element = driver.find_element(By.CSS_SELECTOR, "element_css_selector")
+Using xpath:
+
+element = find_element_by_xpath("element_xpath")
+Needs be replaced with:
+
+element = driver.find_element(By.XPATH, "element_xpath")

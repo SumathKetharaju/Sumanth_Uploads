@@ -1,0 +1,49 @@
+we need to import unittest
+following that unittest.Testcase is represents logical unit of tests
+any class that derive from unittest.testcase will include many functions
+fixtures --> which will invoke for every unit test case within a class
+setup function --> is a special function within a unittest framework which is invoked for every single test defined within a
+testcase and which wiil be called first and following that all of the operations within the body of the test will be run.
+within the setup function we can place all the code which does some kind of initialization for each of our tests
+teardown function --> which is executed end of every test within the test case, it is used to clean up operations on each test
+these operations include closing a file, shutdown a connection and soon
+testsuite is a collection of testcases
+
+positional arguments:
+  tests                a list of any number of test modules, classes and test methods.
+
+optional arguments:
+  -h, --help           show this help message and exit
+  -v, --verbose        Verbose output
+  -q, --quiet          Quiet output
+  --locals             Show local variables in tracebacks
+  -f, --failfast       Stop on first fail or error
+  -c, --catch          Catch Ctrl-C and display results so far
+  -b, --buffer         Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS  Only run tests which match the given substring
+
+Examples:
+  python.exe -m unittest test_module               - run tests from test_module
+  python.exe -m unittest module.TestClass          - run tests from module.TestClass
+  python.exe -m unittest module.Class.test_method  - run specified test method
+  python.exe -m unittest path/to/test_file.py      - run tests from test_file.py
+
+usage: python.exe -m unittest discover [-h] [-v] [-q] [--locals] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [-s START] [-p PATTERN] [-t TOP]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --verbose         Verbose output
+  -q, --quiet           Quiet output
+  --locals              Show local variables in tracebacks
+  -f, --failfast        Stop on first fail or error
+  -c, --catch           Catch Ctrl-C and display results so far
+  -b, --buffer          Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS   Only run tests which match the given substring
+  -s START, --start-directory START
+                        Directory to start discovery ('.' default)
+  -p PATTERN, --pattern PATTERN
+                        Pattern to match tests ('test*.py' default)
+  -t TOP, --top-level-directory TOP
+                        Top level directory of project (defaults to start directory)
+
+For test discovery all test modules must be importable from the top level directory of the project.

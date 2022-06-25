@@ -1,0 +1,111 @@
+# requirement --> from folder we can read the all xlsx files and then those files should be added as a different sheet
+# within a single xlsx file
+
+# read data from each xlsx file
+
+
+import os
+import openpyxl
+
+# print(os.listdir())
+# print(os.listdir().endswith(".xlsx"))
+xlsx_files = [x for x in os.listdir() if x.endswith(".xlsx")]
+print("--------------------list of files-----------------------", xlsx_files)
+print("--------------------len of filename-----------------------", len(xlsx_files))
+
+
+# wsr_files = os.listdir()
+
+path = r"C:\Users\SUMANTH\Desktop\Team_DSR.xlsx"
+expected_data = []
+exact_data = []
+
+# # print(len(sheet_names))
+#
+# print(wsr_files)
+#
+for index in range(len(xlsx_files)):
+    print("--------------------index of file-----------------------", index)
+    print("--------------------filename-----------------------", xlsx_files[index])
+
+
+    work_book_obj = openpyxl.load_workbook(xlsx_files[index])
+    sheet_obj = work_book_obj.active
+    max_rows = sheet_obj.max_row
+    max_columns = sheet_obj.max_column
+    print(max_columns)
+    print(max_rows)
+    for row in range(1, max_rows+1):
+        for column in range(1, max_columns+1):
+            cell_obj = sheet_obj.cell(row=row, column=column)
+            # print(cell_obj.value)
+            data = cell_obj.value
+            # print(tuple(data))
+            # print(data)
+            print("------------------------------nested for loop(column)---------------------------------------")
+            expected_data.append(data)
+        print("---------------------------inner for loop(row)---------------------------------------")
+        current_data = expected_data[:]
+        # print(current_data)
+        exact_data.append(current_data)
+        expected_data.clear()
+    print("-------------------for loop-----------------------------------------")
+    final_data = exact_data[:]
+    print(final_data)
+    sheet_names = xlsx_files[index].split(".xlsx")[0]
+    work_book = openpyxl.Workbook()
+    # cuttent_sheet = work_book.active
+    sheet = work_book.create_sheet(sheet_names)
+    for item in final_data:
+        sheet.append(item)
+    work_book.save(path)
+    exact_data.clear()
+
+
+
+    print("--------------sheet name--------------------->", sheet_names)
+    print("-------------------------completed---------------------------")
+#
+print("--------------------------out of loop------------------------------------")
+
+# print(len(exact_data))
+#     sheet_names = xlsx_files[index].split(".xlsx")[0]
+#     print(sheet_names)
+#     sheet = work_book_obj.create_sheet(sheet_names)
+#         # # print(sheet)
+#     for item in tuple(final_data):
+#         print("-----------------", tuple(item))
+#         sheet.append(item)
+#     # work_book_obj.save(path)
+#     exact_data.clear()
+        # # work_book_obj.save(path)
+        # # print(total)
+        # expected_data.clear()
+# work_book_obj.save(path)
+
+print("-------------------------------------------------------------------------------")
+
+            # break
+            # for item in data:
+            #     print(expected_data)
+            #     sheet = work_book_obj.create_sheet(sheet_names[index])
+            #     sheet.append(item)
+                # print(item, end="")
+            # break
+        # sheet = work_book_obj.create_sheet(xlsx_files[index])
+            # sheet.append(tuple(data))
+            # work_book_obj.save(path)
+            # print(data, end="")
+        # print()
+
+# print(expected_data)
+# work_book_obj.save(path)
+
+    # work_book_obj.save(path)
+
+            # break
+    # print("------------------------------------")
+
+        # sheet = work_book_obj.create_sheet("Mahesh")
+
+

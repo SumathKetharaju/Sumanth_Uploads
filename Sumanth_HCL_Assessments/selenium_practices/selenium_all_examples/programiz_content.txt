@@ -1,0 +1,138 @@
+PRO
+Tutorials
+Examples
+Learn Python Programming
+TUTORIALS
+EXAMPLES
+REFERENCES
+ONLINE COMPILER
+Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.
+Our Python tutorial will guide you to learn Python one step at a time.
+If you prefer videos, watch our Python for beginners playlist on Youtube.
+Page Index
+Introduction
+Flow Control
+Function
+Data Types
+File Handling
+Object & Class
+Advanced Tutorials
+Date and Time
+About Python Programming
+Why learn Python ?
+How to learn Python?
+Python Resources
+Introduction
+Getting Started
+Keywords and Identifiers
+Statements & Comments
+Python Variables
+Python Datatypes
+Python Type Conversion
+Python I/O and import
+Python Operators
+Python Namespace
+Python Flow Control
+Python if...else
+Python for Loop
+Python while Loop
+Python break and continue
+Python Pass
+Python Functions
+Python Functions
+Function Argument
+Python Recursion
+Anonymous Function
+Global, Local and Nonlocal
+Python Global Keyword
+Python Modules
+Python Package
+Python Datatypes
+Python Numbers
+Python List
+Python Tuple
+Python String
+Python Set
+Python Dictionary
+Python Files
+Python File Operation
+Python Directory
+Python Exception
+Python Exception Handling
+Python User-defined Exception
+Python Object & Class
+Python OOP
+Python Class
+Python Inheritance
+Multiple Inheritance
+Operator Overloading
+Python Advanced Topics
+Python Iterator
+Python Generator
+Python Closure
+Python Decorators
+Python Property
+Python RegEx
+Python Examples
+Python Date & Time
+Python datetime Module
+Python datetime.strftime()
+Python datetime.strptime()
+Current date & time
+Get current time
+Timestamp to datetime
+Python time Module
+Python time.sleep()
+About Python Programming
+Free and open-source - You can freely use and distribute Python, even for commercial use.
+Easy to learn - Python has a very simple and elegant syntax. It's much easier to read and write Python programs compared to other languages like C++, Java, C#.
+Portable - You can move Python programs from one platform to another, and run it without any changes.
+Why Learn Python?
+Python is easy to learn. Its syntax is easy and code is very readable.
+Python has a lot of applications. It's used for developing web applications, data science, rapid application development, and so on.
+Python allows you to write programs in fewer lines of code than most of the programming languages.
+The popularity of Python is growing rapidly. Now it's one of the most popular programming languages.
+How to learn Python?
+Python tutorial from Programiz - We provide step by step Python tutorials, examples, and references. Get started with Python.
+Official Python tutorial - Might be hard to follow and understand for beginners. Visit the official Python tutorial.
+Get Learn Python App - The beginner-friendly app contains byte-size lessons and an integrated Python interpreter. To learn more, visit: Learn Python app
+Write a lot of Python code- The only way you can learn programming is by writing a lot of code.
+Python Resources
+Python Examples
+Python References
+Python Online Compiler
+Python Guide
+Python Tutorial Videos
+Get Python App
+Join our newsletter for the latest updates.
+Join
+Tutorials
+Python 3 Tutorial
+JavaScript Tutorial
+C Tutorial
+Java Tutorial
+Kotlin Tutorial
+C++ Tutorial
+Swift Tutorial
+C# Tutorial
+DSA Tutorial
+Examples
+Python Examples
+JavaScript Examples
+C Examples
+Java Examples
+Kotlin Examples
+C++ Examples
+Company
+About
+Advertising
+Privacy Policy
+Terms & Conditions
+Contact
+Blog
+Youtube
+Apps
+Learn Python
+Learn C Programming
+Learn Java
+© Parewa Labs Pvt. Ltd. All rights reserved.

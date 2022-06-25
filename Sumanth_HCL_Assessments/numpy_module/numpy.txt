@@ -1,0 +1,97 @@
+numpy -->
+numpy is one of the fundamental package for scientific computing
+its primary characteristic is directly allows data to be represented in the form of n dimensional arrays and then supplies a number of features
+which allow us to transform and manipulate those arrays
+since it provide such an elementary at crucial platform numpy serves as a builtin block for a wide variety of python based data science libraries
+this include other data structure packages such as pandas and also data visualization tools like matplot lib and machine learning frameworks
+like cycleton
+
+complex operations such as indexing, slicing, universal functions and reshaping arrays
+
+introduction to numpy -->
+numpy express the data in the form of arrays
+
+array creation -->
+
+indexing and slicing operations on numpy array -->
+the ellipses is used to denote the rest of the array
+reshapping arrays -->
+the differnce between ravel and flatten is that flatten belongs to array onject and can only used by numpy arrays
+the ravel function belongs to numpy library and can be applied to any object which can be successfully passed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

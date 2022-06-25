@@ -1,0 +1,114 @@
+DEBUG:__main__:------------------------------ This is logging debug level ----------------------------------------
+DEBUG:__main__:The addition of two numbers 40 and 20 is --> 60
+DEBUG:__main__:The subtraction of two numbers 40 and 20 is --> 20
+DEBUG:__main__:The multiplication of two numbers 40 and 20 is --> 800
+DEBUG:__main__:The division of two numbers 40 and 20 is --> 2.0
+INFO:__main__:------------------------------ This is logging Info level ----------------------------------------
+INFO:__main__:The addition of two numbers 40 and 20 is --> 60
+INFO:__main__:The subtraction of two numbers 40 and 20 is --> 20
+INFO:__main__:The multiplication of two numbers 40 and 20 is --> 800
+INFO:__main__:The division of two numbers 40 and 20 is --> 2.0
+WARNING:__main__:------------------------------ This is logging warning level ----------------------------------------
+WARNING:__main__:The addition of two numbers 40 and 20 is --> 60
+WARNING:__main__:The subtraction of two numbers 40 and 20 is --> 20
+WARNING:__main__:The multiplication of two numbers 40 and 20 is --> 800
+WARNING:__main__:The division of two numbers 40 and 20 is --> 2.0
+ERROR:__main__:------------------------------ This is logging error level ----------------------------------------
+ERROR:__main__:The addition of two numbers 40 and 20 is --> 60
+ERROR:__main__:The subtraction of two numbers 40 and 20 is --> 20
+ERROR:__main__:The multiplication of two numbers 40 and 20 is --> 800
+ERROR:__main__:The division of two numbers 40 and 20 is --> 2.0
+CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:__main__:The addition of two numbers 40 and 20 is --> 60
+CRITICAL:__main__:The subtraction of two numbers 40 and 20 is --> 20
+CRITICAL:__main__:The multiplication of two numbers 40 and 20 is --> 800
+CRITICAL:__main__:The division of two numbers 40 and 20 is --> 2.0
+CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:__main__:The addition of two numbers 40 and 20 is --> 60
+CRITICAL:__main__:The subtraction of two numbers 40 and 20 is --> 20
+CRITICAL:__main__:The multiplication of two numbers 40 and 20 is --> 800
+CRITICAL:__main__:The division of two numbers 40 and 20 is --> 2.0
+CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:__main__:The addition of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The subtraction of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The multiplication of two numbers 40 and 0 is --> 0
+CRITICAL:__main__:The division of two numbers 40 and 0 is --> None
+ERROR:__main__:Tried to divided by Zero
+DEBUG:__main__:------------------------------ This is logging debug level ----------------------------------------
+DEBUG:__main__:The addition of two numbers 40 and 0 is --> 40
+DEBUG:__main__:The subtraction of two numbers 40 and 0 is --> 40
+DEBUG:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+DEBUG:__main__:The division of two numbers 40 and 0 is --> None
+INFO:__main__:------------------------------ This is logging Info level ----------------------------------------
+INFO:__main__:The addition of two numbers 40 and 0 is --> 40
+INFO:__main__:The subtraction of two numbers 40 and 0 is --> 40
+INFO:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+INFO:__main__:The division of two numbers 40 and 0 is --> None
+WARNING:__main__:------------------------------ This is logging warning level ----------------------------------------
+WARNING:__main__:The addition of two numbers 40 and 0 is --> 40
+WARNING:__main__:The subtraction of two numbers 40 and 0 is --> 40
+WARNING:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+WARNING:__main__:The division of two numbers 40 and 0 is --> None
+ERROR:__main__:------------------------------ This is logging error level ----------------------------------------
+ERROR:__main__:The addition of two numbers 40 and 0 is --> 40
+ERROR:__main__:The subtraction of two numbers 40 and 0 is --> 40
+ERROR:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:The division of two numbers 40 and 0 is --> None
+CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:__main__:The addition of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The subtraction of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+CRITICAL:__main__:The division of two numbers 40 and 0 is --> None
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:------------------------------ This is logging error level ----------------------------------------
+ERROR:__main__:The addition of two numbers 40 and 0 is --> 40
+ERROR:__main__:The subtraction of two numbers 40 and 0 is --> 40
+ERROR:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+ERROR:__main__:The division of two numbers 40 and 0 is --> None
+CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:__main__:The addition of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The subtraction of two numbers 40 and 0 is --> 40
+CRITICAL:__main__:The multiplication of two numbers 40 and 0 is --> 0
+ERROR:__main__:Tried to divided by Zero
+CRITICAL:__main__:The division of two numbers 40 and 0 is --> None
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:ERROR:__main__:------------------------------ This is logging error level ----------------------------------------
+2022-04-12 08:50:43,177:ERROR:__main__:The addition of two numbers 40 and 0 is --> 40
+2022-04-12 08:50:43,177:ERROR:__main__:The subtraction of two numbers 40 and 0 is --> 40
+2022-04-12 08:50:43,177:ERROR:__main__:The multiplication of two numbers 40 and 0 is --> 0
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:ERROR:__main__:The division of two numbers 40 and 0 is --> None
+2022-04-12 08:50:43,177:CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+2022-04-12 08:50:43,177:CRITICAL:__main__:The addition of two numbers 40 and 0 is --> 40
+2022-04-12 08:50:43,177:CRITICAL:__main__:The subtraction of two numbers 40 and 0 is --> 40
+2022-04-12 08:50:43,177:CRITICAL:__main__:The multiplication of two numbers 40 and 0 is --> 0
+2022-04-12 08:50:43,177:ERROR:__main__:Tried to divided by Zero
+2022-04-12 08:50:43,177:CRITICAL:__main__:The division of two numbers 40 and 0 is --> None
+2022-04-12 11:36:01,501:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,501:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,501:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,501:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,501:ERROR:__main__:------------------------------ This is logging error level ----------------------------------------
+2022-04-12 11:36:01,501:ERROR:__main__:The addition of two numbers 40 and 0 is --> 40
+2022-04-12 11:36:01,501:ERROR:__main__:The subtraction of two numbers 40 and 0 is --> 40
+2022-04-12 11:36:01,501:ERROR:__main__:The multiplication of two numbers 40 and 0 is --> 0
+2022-04-12 11:36:01,501:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,501:ERROR:__main__:The division of two numbers 40 and 0 is --> None
+2022-04-12 11:36:01,501:CRITICAL:__main__:---------------------------- This is logging critical level ------------------------------------
+2022-04-12 11:36:01,509:CRITICAL:__main__:The addition of two numbers 40 and 0 is --> 40
+2022-04-12 11:36:01,509:CRITICAL:__main__:The subtraction of two numbers 40 and 0 is --> 40
+2022-04-12 11:36:01,509:CRITICAL:__main__:The multiplication of two numbers 40 and 0 is --> 0
+2022-04-12 11:36:01,509:ERROR:__main__:Tried to divided by Zero
+2022-04-12 11:36:01,509:CRITICAL:__main__:The division of two numbers 40 and 0 is --> None

@@ -1,0 +1,3 @@
+string = "india is my country and i love my country" find the number of occurance of country by using regex?
+
+

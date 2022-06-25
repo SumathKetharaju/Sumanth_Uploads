@@ -1,0 +1,15 @@
+2022-04-11 12:45:40,574:DEBUG:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+2022-04-11 12:45:40,578:DEBUG:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+2022-04-11 12:45:40,578:DEBUG:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+%(levelname)s:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+%(levelname)s:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+%(levelname)s:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+levelname)s:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+levelname)s:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+levelname)s:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+(levelname)s:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+(levelname)s:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+(levelname)s:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+DEBUG:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+DEBUG:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+DEBUG:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com

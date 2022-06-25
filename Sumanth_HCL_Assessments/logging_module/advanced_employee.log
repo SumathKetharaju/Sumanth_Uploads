@@ -1,0 +1,28 @@
+DEBUG:root:CreatedEmployee Full Name is --> Mahesh.Ghattamaneni and Email is --> Mahesh.Ghattamaneni@gmail.com
+DEBUG:root:CreatedEmployee Full Name is --> Taraka.Ramarao and Email is --> Taraka.Ramarao@gmail.com
+DEBUG:root:CreatedEmployee Full Name is --> Ram.Charan and Email is --> Ram.Charan@gmail.com
+DEBUG:root:------------------------------ This is logging debug level ----------------------------------------
+DEBUG:root:The addition of two numbers 40 and 20 is --> 60
+DEBUG:root:The subtraction of two numbers 40 and 20 is --> 20
+DEBUG:root:The multiplication of two numbers 40 and 20 is --> 800
+DEBUG:root:The division of two numbers 40 and 20 is --> 2.0
+INFO:root:------------------------------ This is logging Info level ----------------------------------------
+INFO:root:The addition of two numbers 40 and 20 is --> 60
+INFO:root:The subtraction of two numbers 40 and 20 is --> 20
+INFO:root:The multiplication of two numbers 40 and 20 is --> 800
+INFO:root:The division of two numbers 40 and 20 is --> 2.0
+WARNING:root:------------------------------ This is logging warning level ----------------------------------------
+WARNING:root:The addition of two numbers 40 and 20 is --> 60
+WARNING:root:The subtraction of two numbers 40 and 20 is --> 20
+WARNING:root:The multiplication of two numbers 40 and 20 is --> 800
+WARNING:root:The division of two numbers 40 and 20 is --> 2.0
+ERROR:root:------------------------------ This is logging error level ----------------------------------------
+ERROR:root:The addition of two numbers 40 and 20 is --> 60
+ERROR:root:The subtraction of two numbers 40 and 20 is --> 20
+ERROR:root:The multiplication of two numbers 40 and 20 is --> 800
+ERROR:root:The division of two numbers 40 and 20 is --> 2.0
+CRITICAL:root:---------------------------- This is logging critical level ------------------------------------
+CRITICAL:root:The addition of two numbers 40 and 20 is --> 60
+CRITICAL:root:The subtraction of two numbers 40 and 20 is --> 20
+CRITICAL:root:The multiplication of two numbers 40 and 20 is --> 800
+CRITICAL:root:The division of two numbers 40 and 20 is --> 2.0

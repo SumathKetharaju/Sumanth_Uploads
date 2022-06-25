@@ -1,0 +1,140 @@
+Microsoft Windows [Version 10.0.19043.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest -v
+test_full_name_in_setup (test_fixtures.TestStudent) ... ok
+test_mail_id_in_setup (test_fixtures.TestStudent) ... ok
+test_stipend_in_setup (test_fixtures.TestStudent) ... ok
+test_full_name (test_student_details.TestStudent) ... ok
+test_mail (test_student_details.TestStudent) ... ok
+test_stipend (test_student_details.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest -v
+test_full_name_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_full_name_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_mail_id_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_mail_id_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_stipend_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_stipend_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_full_name (test_student_details.TestStudent) ... ok
+test_mail (test_student_details.TestStudent) ... ok
+test_stipend (test_student_details.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest -v
+test_full_name_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_full_name_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_mail_id_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_mail_id_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_stipend_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_stipend_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_full_name (test_student_details.TestStudent) ... ok
+test_mail (test_student_details.TestStudent) ... ok
+test_stipend (test_student_details.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest -v
+test_full_name_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_full_name_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_mail_id_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_mail_id_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_stipend_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_stipend_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+This is setUpClass method
+test_full_name_in_setup (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_full_name_in_setup
+This is tearDown method
+ok
+test_mail_id_in_setup (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_mail_id_in_setup
+This is tearDown method
+ok
+test_stipend_in_setup (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_stipend_in_setup
+This is tearDown method
+ok
+This is tearDownClass method
+test_full_name (test_student_details.TestStudent) ... ok
+test_mail (test_student_details.TestStudent) ... ok
+test_stipend (test_student_details.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.010s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>python -m unittest -v
+test_full_name_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_full_name_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_mail_id_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_mail_id_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+test_stipend_in_setup (test_fixtures.TestStudent) ... -------------------------------------- This is setUp method --------------------------------------
+----------------------------------- This is test_stipend_in_setup ---------------------------------
+-------------------------------------- This is tearDown method --------------------------------------
+ok
+This is setUpClass method
+test_full_name_in_setup_class (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_full_name_in_setup_class
+This is tearDown method
+ok
+test_mail_id_in_setup_class (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_mail_id_in_setup_class
+This is tearDown method
+ok
+test_stipend_in_setup_class (test_setup_class_methods.TestStudent) ... This is setUp method
+This is test_stipend_in_setup_class
+This is tearDown method
+ok
+This is tearDownClass method
+test_full_name (test_student_details.TestStudent) ... ok
+test_mail (test_student_details.TestStudent) ... ok
+test_stipend (test_student_details.TestStudent) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\advanced_unit_test>

@@ -1,0 +1,230 @@
+list_1= [1,2,5,3,9,5,26,53,95,] , output should be the list and first index should be divided by second like respectively
+
+list_1= [1,2,5,3,9,5,26,53,95,] print list in reverse order
+
+Write a code that all 0's in the list should move to right-side , list_1= [8,0,0,65,79,0,21,0,0,0,54,12]
+
+String= "ffgyytuuugg" write a code to print that first unique character and position of that character
+
+list_1 = [1,2,10,3,4,2,5,6,8,9,11] write a code to print 1st & 2nd largest number from the list
+
+
+
+Input ⇒ Welcome Yagna!  ,   given input string should be reversed, but the condition is that last
+                            special character and space between the words should be in its
+                            index position even after reversing the string
+ this is the expected output
+Output ⇒ angaYem ocleW!
+
+
+In given string vowels should be replaced with numbers, do it with for loop and Regex
+
+list_1=[1,12,3,4,4,3,2,5,6,5,6] write a program to print without repeated values from the list
+
+String_1="986758h49ghsdfe#$%@3h4" using Regex and looping get only numbers as output
+
+
+Input = [(2, 3), (4, 5), (6, 7), (2, 8)] each tuple should be multiply and output should be in list as below
+	Output: [6, 20, 42, 16]
+
+
+Write a program using while loop to print prime numbers in between the range of given numbers
+
+Using re write a program to validate ip address
+
+Write a program to count the duplicate characters in a string
+
+Read the file and print whether the given word is available or not
+
+Write a program for palindrome number and as well as word
+
+dict_1={1:2,2:4,3:6,4:8} write a program for swapping keys as values and viceversa
+
+Print unique elements from the list
+
+Read 5 integer numbers using a single statement,without using loops
+
+Print a given word 5 times, with loop and without using loop
+
+Write a program to count each element from the list that how many times each element was repeated(key:value)
+
+String1 = 'AB23GWS58TDE789WSC234MNO97899AD2BO' can you get the maximum number from the string using Regex
+
+tuple=(3,4,1,5,2) sort the elements output=(1,2,3,4,5)
+
+Write a program on fibonacci series
+
+Write a program on factorial
+
+Write program on list find sum of highest last three nums?
+
+Take nested dictonary dict_1 = {"a": 1, "b": 2, "c":3, "d":{"f":4, "r":5, "g": 6}, "f":{"g":5}} i want value 6?
+
+Write function, pass an arugument as string in that count vowels?
+
+Write function, pass an arugument as string in that count consonats?
+
+Convert list of elements to string?
+
+Printing patterns
+
+Let’s say you have a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Write one line of Python that takes this list and makes a new list that has only the even elements of this list in it. (Use List Comprehension and Lambda expression).
+
+Take a list, say for example this one:
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+and write a program that prints out all the elements of the list that are less than 5.
+
+Extras:
+
+Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.
+
+Write this in one line of Python.
+
+Ask the user for a nuxmber and return a list that contains only elements from the original list a that are smaller than that number given by the user.
+
+Write a program to sort an integer array of 10 elements in ascending by using quicksort, Bubble sort and Selection sort algorithms.
+
+ Write a program to search for an element of an integer array of 10 elements by using binary search as well as sequential search algorithm.
+
+Write a python program to count number of lines, words and characters in a text file.
+
+Write a python program to copy an image file to another file.
+
+Write a python program to read all strings from a text file and display them.
+
+Write a python program to create Employee class with id, name and email as instance variables and their objects to be serialized.
+
+Write a python program to create a lambda function that returns a square value of a given number.
+
+Write a lambda function to filter even numbers from a given number list.
+
+Write a lambda function that returns square for each value from a number list.
+
+Write a lambda function to multiply numbers of two given list.
+
+Write a function to calculate product of elements of a list using lambda and reduce function only.
+
+Write a function decorator to calculate factorial, when it’s get applied on a given function.
+
+Write a python program to find common elements from two given list.
+
+Use list comprehension to add each element of a list, say x   to each element of other list, say y.
+
+Write a python program to create a regular expression to search for strings starting with m and having total 3 characters.
+
+For example:
+
+Input=” man sun mat run”
+
+Output:[ man,mat]
+
+
+
+Write a python program to create a regular expression to split a string into pieces where one or more non alpha numeric characters are found.
+
+For example,
+
+Input: ’This is the: “core” python\’s assignment’
+
+Output: [This, is the, core, python, ’s’, ’assignment’]
+
+Write a python program to retrieve all words starting with ‘a’ in a given string.
+
+For example,
+
+Input: ‘an apple a day keeps the doctor away’
+
+Output: an, apple, a, away
+
+Write a python program to create a regular expression to retrieve all words starting with a numeric digit.
+
+For example,
+
+Input: the meeting will be conducted on 1st and 21st of every month.
+
+Output: 1st,21st
+
+
+
+Write a python program to create a regular expression to retrieve all words having 5 characters length.
+
+For example,
+
+Input: one two thee four five six seven 8 9 10
+
+Output: three,seven
+
+Write a python program to create a regular expression to retrieve date of births in mm-dd-yyyy format from a string.
+
+For example,
+
+Input: Vijay 20 1-5-201, Rohit 21 22-10-1990, Sita 22 15-09-2000
+
+Output: 22-10-1990, 15-09-2000
+
+A python program to create a regular expression that reads email-ids from a text file.
+
+Write a python program to create a regular expression that retrieve information from an HTML file.
+
+For example,
+
+Input: <html>
+
+             <table border=2>
+
+            <tr align=’center’><td>1</td> <td>Roti</td> <td>50</td></tr>
+
+            <tr align=’center’><td>2</td> <td>Dosa</td> <td>55.75</td></tr>
+
+            </table>
+
+        </html>
+
+Output:(Roti,50),(Dosa,55.75)
+
+
+
+
+
+
+
+Write a python program to find the IP address of a website.
+
+For example,
+
+Input: www.google.co.in
+
+Output: 216.58.221.35
+
+
+
+Write a program to read the source code from a web page.
+
+Write a program to download a web page from the internet.
+
+Write a program to create a TCP/IP server that sends messages to client.
+
+Write a python program to create a file server that receives a file name from a client and sends the contents of the file.
+
+
+
+Lata has been assigned a task to write a program in Python to maintain the details of a student such as roll, name,
+address and email. The implementation methodology shall be object oriented. Each student shall be initialized through
+the constructor. There should be a common method that will print the details of each student on the screen. As a friend
+help her in writing the solution of program.
+
+
+
+Create the Employee class with following constraints:
+
+The class should have the attributes, id, name, department, age and email.
+
+The class must have a method, named setEmployee () to initialize the attributes of Employee class.
+
+All the variables must be declared as private
+
+The id shall be generated automatically for each employee. For example, when first object of an employee is created,
+then the id shall be 1 and similarly the id for second employee shall be 2 and so on.
+

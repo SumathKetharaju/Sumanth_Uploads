@@ -1,0 +1,491 @@
+pandas is a very popular python library, and it is a part of open source pydata stack
+pandas represents data in a tabular format and makes it very easy to perform data manipulation, data cleaning and data explanation
+
+this pandas series objects which represents a single column of data and the pandas data frame which represents data ib the form of table
+
+pandas is a invaluable tool for anyone who wants to work with data using python
+
+series is the basic data structure used by python and series represents one column of data or one vector of data
+
+the basic data structure that is used to represent our old data in pands is something called a dataframe
+
+data frame is a tabular representation of our data, our data is work on by representing it in the form of tables which have rows
+as well as columns
+
+pandas series objects -->
+
+A series is a one dimensional labeled array in pandas
+
+series in pandas can be instantiated by instantiating the class series pd. series and we can pass in any kind of list to the constructor
+inorder to instantiate a series
+
+a pandas dataframe which is typically is made up of a number of columns and each of these columns represented by series objects
+
+here the series represents one column of data but there are two columns of data present here
+we can see the right most column contains the list of numbers that we are used to instantiating the series 3, 4, 7, 2, 9 in addition
+every element of pandas series is assigned index starting with zero by default so the numbers we see on the left most column refer to the
+indexes of the elements in the series
+
+we are using square brackets to access individual elements of a series
+
+index mask is simply a list used to specify multiple indices that we want to access within a pandas series and it is used to
+access multiple index elements of a series
+
+we can also access the elements of the series by using boolean mask is simply an array of boolean objects, when we use this
+boolean mask it just instantiated inorder to access the elements from these pandas' series all of the elements which correspond
+to True values-of the boolean mask will be returned
+
+when we use boolean mask of value of True that implies we want to access that element in a pandas series and the value of False implies that
+we do not want that element return
+
+pandas series is a labeled array in one dimension this labeled array has a corresponding index
+
+if we want to access the only the index values of particular pandas series we can access the .index variable of the series object
+
+the index for this particular series that we instantiated is a range index this represents range of integers starting at 0 and stopping at 5
+the stop vale in the range is exclusive which the step of 1 index values are actually 0, 1, 2, 3, 4
+
+it is posible to change indexes for particular pandas series and we can do by assagning a new index to the .index member variable
+
+so instead of having integers from 0 to 4 as our indeces we wat our index value to be a, b, c, d, e
+
+now second column represents actual elements of our series and for the first column of indecies are actually characters they are no longer
+integers
+
+integers are what pandas uses as default index values whether it is for a series of a dataframe these index values can be customized
+based on our specification
+
+we can now access by specifying these characters
+
+if we want to access multiple elements using their index values that possible when we have to simply specify these index values within
+an inner list
+
+so whatever index values we choose for our pandas series we use those value to retrieve individual elements
+
+so now we can use this dictioanry to instantiate pandas series objects we call pd.series and pass in this dict of data this is the dictioanry
+just we instantiated to the constructor
+
+when we use the python dictioanry to instantiate the series objects the keys of the dictionary will become the indexes in the python
+series where as the values of the python dictioanry correspond to the elements of the pandas series
+
+pandas series are name sone dimentional data which means we can assaign the variable name to identify a particualr series
+now if we printout the value of series
+
+operations on series -->
+
+for this we will instantiate two separate series objects
+
+here both of these series objects will be instantiated using python lists
+here three elements are in common like 1, 3, 5
+
+now when w eworking on very large datasets its not always possible to see  which elements between two series overlapped to make this easy
+for us by specifying isin number function so we can simply call series one isin series two and figure out which elements series one
+are also present in series two
+
+the result of this operation is also pandas series and this is a boolean series there are boolean values which are True when an element in
+series one is also present in series two and its FAlse when that particular element in series one is not present in series two
+
+now the result is in boolean mask
+
+and we can use this boolean mask to index into our series one now this partuclar operation will tell us which of the elements in series one
+are also present in series two
+
+now it gives the True values of the boolean mask
+
+pandas is also specifies simple not operation, here series one is in series two this ~ represent not and it reverses the output of the
+boolean mask which means that this particular pandas operation will give us all of the elements from series one that are not present in
+series two, and here false value become True and True values become false
+
+now we see here only elements in series one that are not also present in series two ar the elemsts 2 and 4
+
+so when we performing data mangling in pandas we can use this ~ to flip True values as False and viceversa from a series result
+
+every series also offered a function called map that allows us to use transformation which applies to all elements of the series
+here lambda is used for transformation will apply to every element which is present in series one
+
+lambda function in python is a use and throw anonymous function
+
+this lambda function will apply on every element of series one and return square of that element
+
+now series one compraising of the elements 1, 2, 3, 4, 5 and it will be now 1, 4, 9, 16, 25
+
+the map function performed on the series returns the result in series
+
+if we have two series objects we can aso perform mathamatical operations for example we can add the elements of two series
+by cal;ling series one.add here add is the member function of the series object
+
+now this will add the elements that are in the same index in the two series, thsi is an element wise operation
+
+So if we want to have same data represented in a different format we can change the data type of the series with by calling astype function
+
+appending and sorting series values -->
+if we want to combine two series together to get the single series with more elements we can use append operation
+
+when we say series one append series two series one elements will appear first and to the very we append the values of series two
+
+now first we have all of the elements of series one and then we have the elements of series two, the resulting series objects which we
+formed appending series one and series two have index values from the original series one and series two objects
+
+this shows us index in pandas series are not actually unique they simply labeled to the corresponding particular element
+
+if we want these indexes to be unique in the appended series we have to specify an additional input argumant when we performing the append
+that is ignore_index= True this ignore_index the append operation ignore original index labels and generate new index labels
+for the appended series
+
+when we printout the contents of this appended series observes that now completely new we go from 0 to 9, here the original indexes will
+completely ignored and new index lables will br generated for the appended series
+
+if we want to drop an element at a particular index we can simply call series. drop and specify the index label, now we
+find all the remaining index values we dont have the element corresponding to the index w mentioned in drop
+
+well if we drop a single index from a pandas series is stands to reason that to drop multiple indices we will call the same drop function
+and specify the labels input argument but this we will specify a list of labels now this will get those elements which are present at the
+indexes what we mentioned in labels have disappeared
+
+this pandas series also supports number of operations for example we can count the elemnents present in the series by simply calling
+the count function
+
+now if we have large series of data it is possible there are duplicates in that data nd we only want to know how many unique values are
+present
+count include duplictes also if we want to know the only unique values we simply call nunique function on a series, this nuniques will
+give only number of unique values
+
+if we want to see what those unique values are we simply call the unique function on a series, this unique will listout all of the unique
+values that are present in the pandas series in the form of an array
+
+if we want to sort the elemnst of the series that it is in sorted order we can simply call series,sort_values is a function that
+will give us series with all of the elements in the sorted order
+
+most of the operations that we performed on series objects so far to perform the operation and return the result in a separate
+series object
+
+now if we want to perform an operation but we want that operation affect that series itself we want to change the data in the series where
+we are calling the function we want to update the series itself and this is possible to do as well
+
+this time we pass an additional input argument that is inplace=true now by default inplace is false which is by get the sorted values as
+a result a different series object, if inplace=true will sort the appended series object directly, here the index labels
+associated with the individual elements have also been sorted, so the index labels are no longer in sorted order because the values are
+every element is still associated with the original index that at had before we perform the sort inplace operation
+
+if this is not what we wanted when we sorted the series inplace we can alwyas reset our index values that they are once again sorted integers
+by simply calling reset_index function n the series the reset_index will generate new index values starting with zero
+
+now we will find what exactly we expected, the result is not the series but instead its table the result is the data frame this table
+contains the total of 10 records and we can see that it contains two columns each individual column is a series of its own it contain
+one column name index and another column labeled zero, here we observe that index values are start with 0 and go upto 9and the index
+column contain the original indicies for that series this is because when we call reset_index on a series it preserves the original indecies
+that existed and then adds a new index starting with zero the original indices are what are preserved in the index column and the new
+indices rae the one which have no corresponding column name in this table
+if we wnat to rest the index for this particular series so that i have indexes starting with zero bur i do not want the original indices
+we simply call reset_index with an additional input argument drop=true, this drop=true will drop the original index labels which are no
+longer
+
+pandas dataframes -->
+
+dataframe is the basic data structure when we use pandas
+
+dataframes represents tabular data the data in the form of table and a table as we know is made up of columns and it is this column data
+that is represented by a pandas series
+
+how data frames can be composed from pandas series objects lets go ahead and instantiate the pandas series and assained it to the
+series of nums
+
+lets now go ahead and instantiate second pandas series now so far when we work with data series we only store numeric values within a
+series however pandas series can supports strings and booleans and more complex datatypes as well
+
+this particular pandas series is a series of chracters we instantiate it in the pd.series constructor and we assained th series to the
+variable series of letters
+
+pandas offers a builtin function called concat it allows us to concatenate multiple series to gether inorder to form a dataframe here
+we pd.concat and passing the series of nums and series of letters in the form of a list, now concatenating two series to make a dataframe
+can be done in two ways
+
+noe the dataframe that is a table has two axis 0 and 1, here 0 represents rows and 1 refers to the columnswhen we say that we want this
+concatenation it will be perform along axis=1 we want this concatenation to be performed in a column wise manner
+
+pd.concat will give us the data frame and we stored it in the df varaible here we take a look at the df variable notice that the two
+individual series have been startup column wise
+
+the two series objects that we concatenated to form a result in dataframe did not have name they were not labeld series which means when we
+create a dataframe pandas went hidden and assian own lables to the columns just like with index values id assigned column zero to the first
+series and colum one to the second series
+
+we had not named the series when we perform the concatenation which is why pandas pics default values
+
+the concatenate opeartion the pd.concat is one way to concatenate series objects to form a datframe, we can also instantiate dataframe
+by calling the pd,dataframe constructor, in this particular case here we specifying dictioanry with series objects as the initialization
+value for our constructor
+
+so we pass the two series objects series of nums and series of letters corresponding to the keys numbers and letters the keys of this
+dictioanry will be the column names the result in dataframe
+
+so when we printout the resulting dataframe in the variable df notice that the datframe now has real column values which are meaningful
+we can see that numbers corresponding to the series of nums and letters correspon to the series of letters these are the keys that
+we have specified in the dictionary that we use to instantiate the dataframe
+
+so far we been working with made of data if we are working with pandas in the real world what we really want to do is to read information
+from a csv file or a json file that we ahve stored on our local machine
+
+csv files have a very natural tabular structure we wil find that we offer to read csv dat for pandas dataframe inorder to manupulate
+this data
+
+pd.read_csv is a function that we will call to read in a csv file, the read_csv function requires a path where our csv file will be loacted
+it can absolute path or relative path
+
+here we specified a relative path datasets is the sub folder under the current working directory nad within that we want to read the csv
+file called countries of the wrld.csv
+
+this will give us a dataframe that is stored in the countries variable
+
+because we are working world data the countries dataframe might contain many many records
+
+if we really dont want to printout the entire dataframe if we just want to view the first few records in the dataframe we will simply call
+the head function
+
+a head function by default will display the first five records in this dataframe
+
+we can see that this dataframe is a real table there are number of different columns and every record corresponds to a particular country
+
+the country is alphabetical order starting with afghanisthan and the region column contains the region of the country where it is located
+
+the number of other columns correponding to population deatils, area details, population density, coastline in the form of ratio caost
+upon coast area and soon
+
+the head function by default displays 5 records if we want to display additional records we can simply pass an input argument here i want
+to display the first 10 records of my dataset then it displays on the screen first 10 countries in my dataset
+
+the haead function retries the records the head of our dataset the first records, there is corresponding tail function which the dataframe
+offers inorder to explore the records of tail end of the dataset at the very end by default tail displays the last 5 records
+
+when we are working with real data sets its quite possible that the dataset contain the number of pieces of information that we are
+not really interested,
+there are columns of dat which we want to ignore for now, it ways to posses that data just because of present in the original data
+
+indexing operations with dataframes -->
+
+dataframes contain columns and every column is a pandas series object we can access the individual columns by indexing into the dataframe
+by specifying the column name
+
+here we are accessing the country column in our countries dataframe and here dipayed on the scrren in the country column the lis of all
+the countries present in our dataset
+
+if we scroll to the bottom of this we get the information about this series we can see that this series has a nma ethat is country there are
+227 elements in the series and finally the data type for this series is simply object
+
+we can also use the head function to sample the first few records of a series so countrie suqare bracjets country will access the country series
+and if we call .head on it, it will diplay the first five countries by default
+
+we can also index into the series like we seen before to access country ata a specific index value
+
+countries[country] will give us the country series and within that we want to access the country poition ata index 206 and in our dataset
+this country has to be turkey
+
+just like python lists we can also use the range operation of index values to access series elements in a particular array
+
+in our countries dataframe we want to access those countries in the range of 105:112 theses are the thier index values , the result is a
+pandas series object with those country as specified by us notice that the index value used range from 105 to 111 na they happen correcsponding
+to thier countries
+
+dataframe indxing also allows us to access multiple columns woth in a dataframe here we want the information the columns contain country
+and birthrate and we specify those column names as a list pass to the countries dataframe we first select the columns that we are interested in
+the result we then specified index values of the row or the records that we are interested in
+
+we specify this as we did before using the colon separator and the result is a datfrmae because we have multiple column values the result
+is the pandas dataframe not a pandas series
+
+we can also us the range operator that is the colon when specifying column names here we are not interested in the data country and birthrate
+columns we rae interested in all of the columns in that range starting at country upto birthrate
+
+now we can perform this operation but this is not the right way when we execute this bit of code we will encounter an error we can not do
+slice indexing on columns in this manner
+
+this means if we want to access a range of columns we cant directly use square brackets with the colon operator
+
+if we want to access range oif colums na drows in a pandas dataframe use the loc operator dont use suare brackets
+
+countrie.loc we then specify the row range the we are interested in so we rae interested in 105:112 in our dataset this range is inclusive
+the record with 112 will be present in the result
+
+and we are interested in the data stored in a range of columns starting with the column country upto the column birth date
+we specify country:birthdate to indicate a range of columns and we can see in the result that this works as expected observe that the loc operator
+allowed us to specify a range of records that we were interested in in our individual row strating with 105 upto 112 will included and the
+result also includes the column range that we were interested in starting from the column country upto birthrate the column daeth rate is not
+included in the result
+
+we can also specify more complex range operations when we use the loc operator observe that the range we specified for the records that is
+the row we are interested in therows 105:112:3 but we have an addiional parameter here that is 3 : and then follwed by 3, the value 3 here
+is the step and we start at index105 access those records with the step of 3 the result contain the 105,+3 108,+3 111 we reach the stop index
+that is 112 these raethe only records in our result
+
+the loc operator allowed us to specify the columns that we were interested in by name but we want to use just index positions to refer to
+columns as well we will use the iloc operator the input parameter that we pass into iloc contain iondex position so 105:112refer to the
+index positions of the rows not the index labels and 0:4 refres to the column indices because the index value that we have for our datset
+patch the index positions the result here same thatwe seen before
+
+records from 105 to 111 and onformation for the columns country population area and birthdate there is one certain difference that when we
+specify index postion the range is excludes that index 112 is not included in the result an dhere are the columns at index postions 0:4
+the column at index 4 which is the death rate column is once agian not included in the result
+
+Missing data -->
+
+lets now perform an operation that we add a new column to our datafrae na dthis column will have the values that are computed from one of
+the original column so we are going to access the values in the countries area square mile column and multiplied by 1.609 * 1.609 inorder
+to get the area in square kilometers if we perform a mathamatical operation on a column that operation will be applied to the individual values
+in that column and will assign this value to a new column in out dataframe called area so countries area will contain the area in square
+kilometers now we call countries.head we will see that we have an extra column here this area column is computed from values in the area
+square miles column
+
+once we have the area in squra kilometers we might decide that we dont really need the original column ny more so we can go head and drop
+the area in square miles column our countries.drop the labels these are the labels of the column that we want to drop is that the area in
+square miles column nad the axis=1 to drop the column as a whole
+
+we were find the result the countries dataframe and if we take a look at by calling the head function we will find that we will no longer
+area in suare miles column
+
+
+if we work with numpy arrays we know that the shape property of the array will gives us useful information dataframes also
+having corresponding shape property which will tell us how many records of data present in that dataframe and how amny columns in
+ each record contains
+
+as we can see the shape result here the countries dataset has 227 rows and 5 columns
+
+when we rae working with the dat in the real world the data set thatwe use is never perfect it might be contain missing values wrong
+values and all kinds of junk within it
+
+dataframe offer us simple way to check some of these unclean property our data set and it is easy to check for missing values in data set is
+to call the isna function on a dataframe , here countries.isna() tell us if there are any fields that the data is not available
+
+isna stands for data not aviailable
+
+the result of calling isna on a dataframe is a table of boolean, to srooll down the data set here we will find that there are four fields
+with missing values isna=True the data for these field is not available
+
+if we want to quick summery of how many fiellds of each column have unavailable or missing data we can simply call countries.isna.sum and perform
+the sum aggregation this result will listout all of the columns name sthat is country population birth rate, death rate and the area and the
+corresponding values choose you how many of those fileds have missing information
+
+so in our data set there are three countries with no birthdat information and four with no information in deathrate column
+
+let say if we use the data for some kind of  machine learning analysis we may not want to deal with the information any way there are few records
+with missing values we can just go ahesd and call dropna() inorder to get read of all records which have any field values have missing
+if a single filed in a row has missing the data then the entire row will br dropped from the result
+
+now lets run countries.isna().sum() and we will find the there are no missing values all the recorde that we have in adataset have
+complete information for every field
+
+now look at the shape of the resulting dat frame and we will find that we have just 223 records now if we remeber when we access the shape
+property earlier we had 227 records 4 records havebeen dropped because they conatain missing information
+
+now there are two wyas in which we can access a column in a particular dataframe
+
+the first way is to use the square brackets which we lalready seen where we specify the dataframe countries in square brackets we specify the
+column anme and then we here we applied head function to a column in order to display the first five records this is not only way to access
+the data in a particular column we can use the dot notation as well  countries.area where area is spelt exactly as in the column name will
+also allows us to access the area column
+
+this square bracket notation is more common when we use pandas but either of these work countries[area] ot countrie,area
+
+and if we remember when we back discussed pandas series objects we spoken about the map operation thatallows us to trensformation to
+every element and also use .apply function on a particuylar series inorder to transform the elements in that series
+
+we access the area series called .apply and specify a lambda function this lambda function tranforms the data within area to br particular
+floating point format area information was originally displayedusing the exponential notation iinstead that we want to use that just
+four numbers after the decimal point and we assined this formatted result back to the area of column in to the countries dataframe
+
+lets invoke countries.area.head to see the result of thi transformstion observe that all of our area value use have jsut four digits
+after the decimal point
+
+column aggregations -->
+
+In this we will explore dataframes further and see how we can perform statistical operations on the data that we are stored in dataframes
+
+once we will work with the countries data set that we have seen before,
+this time the onlly column that we are interested in country, population, coastline, GDP, Literacy, Birthrate
+so we specified these in a required cls list
+the countries data is in the form of csv file which is present in the current working directory
+let go ahead and call the pd.read_csv function to read the data that we only read in the columns that we are interested in and we change the
+decimal values to period instead of commas
+lets call the countries.head function to brifly explore the data that we just read in, head displays the first fivr records and we have six columns of
+information for each record
+observe that some of these columns are rather they have long spaces in their names they have brackets there is little hard to when we index
+into the dataframe to access specific column values
+inorder to have column values that we have easy to work with we can use the rename function on our data frame here countries.rename is what we invoke
+and then specify the column that we want to renamed, then input argument column indicates within curly braces the column to be renamed, we want
+GDP$per capita to be renamed to percapita gdp, and we want to this rename to be inplace as specified by inplace=True we want the countries dataframe
+to be updated with this new column name
+and we will find now that the GDP$per capita has renamed to percapitaGDP typically the column names that we have spaces or other special characters
+are easy to work with
+lets go ahead and name the other coumns to be reasonable names as well
+we will use the same inplace operation on the countries data frame the country.rename  the coastline column name renamed as costlinearearation and
+the literacy % column will be renamed as liyarcay rate
+
+invoke the head function on the countries data frame and we will find that the renames has successfull
+
+we can use the isna operation on individual columns to see there are missing values in that column, we can see that population column has no missing
+values so it will print zero
+if we want to find the sum of popuations across all countries records that we gave us the world population
+the wirld popuation based upon our dataset is a single scalar value of around 6.2million
+lets check to see how many missing values this particular dataset has, heare we will apply the isna operation to the dataframe whole and find the sum
+this is sum of all the missing filds that each our column have
+lets cleanup our data frame by dropping all rows that have missing filed, we simply call dropna and assign the resulting data frame to the countries
+varable, our countries dataframe now has no missng values
+lets look that shpae propert to know the how many records we have in our dataframe, all of these having no missing values
+we drop 20 rows of missing information
+just like the sum aggragation we can perform other aggregations on our data frame as well, we can access specific column and find the minimum value
+in that column using min() function, the it gives minimum litaracy rate for the country
+similarly countries.litsracyrate.max() will give us the maximum litaracy rate which can be ofcource no more enough 100%
+observe how we use the dot notations at the column
+inorder to gat the which country having minum literacy rate we first have to invoke other function called idxmin(), the idxmin() function we invoked
+on the data frame column will give us the index of that recors which has the minimum value for the litaracy rate, tehn we can see the result
+this is the row with index 151
+now that we access the index valle using idxmin, we can us this index value to index into our dataframe, so we want to know the name of the country
+present in the countries.country column and we want to know waht record at idxmin for literacy rate, noe this will us the name of the country that
+has the lowest literacy rate
+similarly we can use the corresponding idxmax function on a particualr column to find those indeces whether countries have the maximum lietarcy rate
+of 100%, idxmax returns a single value 4 indicting the row with idex 4 has the maximum literacy rate of 100%
+if we want to know the maximum lietearcy rate we can access the litseracy rate column from the countries dataframe and extract the literscy rate
+aat idxmax, and we already knowtjhis is the 100%, this is from the analysis that we performed earlier but which country is it that has the maximum
+literacy rate, now if we use idxmax we will get jsu one country in the result but it is possible there are multiple countreis with maximum
+literacy rate of 100%,
+
+anotehr better way to get this information we sholud perform conditional check when we are checking our dataframe,within the countries dataframe
+check the literacy rate column and find those countries whether listeracy rate is equal to the maximum value of the litercy rate, so check every
+records literacy rate and see if it is maximum value if yes that will be return in the result
+
+
+statistical operations -->
+just like min, max, sum and we can also comput the statistical properties of the values stored in the particular column for example if we want
+find the average value of literacy rate acroll all of the countries we can simply access the litaracyrate column and call the mean function, the
+the result state here is 82.94 is the average of all countries rate present in our data set
+now if we are having values in our dataset which pretty obvious that these kind of computations wont give us meaningful results thsi is why important
+to get read of missing values before we perform statistical analysis, the it stands to reason that we can compute the mean value for a particular column
+we can compute other statistical measure such as the median simply use dot notation to access the meadian of the litarcy rate column we
+can also use the square bracket notation if we want to and call the .median function
+std function will give the standard deviation and in our dataset is 19.67
+pandas makes it easy for us to compute percentile measures of the values as well
+for example if we call the quantile() function at 0.5 then we will get the value 50th percentile which is escentially the median, the litaeracy rate
+at the 50th percentile is alraedy we know is 92.5
+if we want to know the literacy rates at multiple quantile we can simply pass the list to the quantile function , here we are specifying 0.25, 0.5
+0.75 and the result will give us the literacy rate at 25th, 50th and 75th percentile as 72.4, 92.5 and 98
+so we have how we can perform statitical operations on individual columns in our data frame, however ther is one way to quickly explore the data
+and give us bunch of stacks acroos the entire data frame and that is the describe() function, describe will compute common statistical measures
+acroos the all of our data that is present in our data frame we have the columns population, coastlineraearation, percapitagdp, literacyrate,
+birthrate and here we can see brief statistics for each of these columns
+we can see that we have 207 records
+describe gives us the all of the statistics at one glance for all of the columns in our data set
+we can calcualte mode of particular column here we are accessing the literacyrate column and call the mode functuion the mode is 99%
+if we want to measure how of skew of the particular values in the column are we can simply access the column and skew() function these are the
+common statistical measures inorder to understand the distribution of values in a particular column
+just like skew() we can also kurtosis function inorder to understand the shape of the probabilty distribution
+we can compute the statistical measures to two or more columns as well for example if we want to see the correlation between the values in any two
+columns of data in our dataframe, we simply access the dataframe and specify column names that we are interested within a list, here we want see hoe
+correlate the coastlinearearation and percappitagdp
+the result is here is the metrix the rows and the columns are both the column names coastlinearearation and percappitagdp we can see that
+coastlinearearation is higly correlated with itself it has a correlation of 1, every column value then we can see the correlation with itself is always
+equal to one that make sense but if we look at the other diagnol we will see that coaslinearearatio is not very correlated with the percappitagdp,
+its correlation is just 0.048
+
+if we want to figure out all columns are correlted with other columns, we can do that as well simply acces the dataframe as the whole and call
+the .corr() function, then it gies how that column is correlted wuith other column
+
+just like corr(), we can use covariance cov() function between various columns in our data set

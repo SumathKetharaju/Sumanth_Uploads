@@ -1,0 +1,20 @@
+sumanth passed B-tech 1st year
+suresh failed B-tech 1st year
+sasi passed B-tech 1st year
+praveen failed B-tech 1st year
+-------------------------------------
+sumanth failed B-tech 2nd year
+suresh passed B-tech 2nd year
+sasi failed B-tech 2nd year
+praveen passed B-tech 2nd year
+-------------------------------------
+sumanth passed B-tech 3rd year
+suresh passed B-tech 3rd year
+sasi failed B-tech 3rd year
+praveen failed B-tech 3rd year
+-------------------------------------
+sumanth failed B-tech 4th year
+suresh failed B-tech 4th year
+sasi passed B-tech 4th year
+praveen passed B-tech 4th year
+-------------------------------------

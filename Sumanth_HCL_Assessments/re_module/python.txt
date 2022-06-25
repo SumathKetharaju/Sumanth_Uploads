@@ -1,0 +1,29 @@
+Python Variables
+A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that
+holds data that can be changed later in the program. For example,
+Here, we have created a variable named number. We have assigned the value 10 to the variable.
+You can think of variables as a bag to store books in it and that book can be replaced at any time.
+Initially, the value of number was 10. Later, it was changed to 1.1.
+Note: In Python, we don't actually assign values to the variables. Instead, Python gives the reference of the object(value) to the variable.
+Assigning values to Variables in Python
+As you can see from the above example, you can use the assignment operator = to assign a value to a variable.
+Example 1: Declaring and assigning value to a variable
+n the above program, we assigned a value apple.com to the variable website. Then, we printed out the value assigned to website i.e. apple.com
+Note: Python is a type-inferred language, so you don't have to explicitly define the variable type. It automatically knows
+that apple.com is a string and declares the website variable as a string.
+In the above program, we have assigned apple.com to the website variable initially. Then, the value is changed to programiz.com.
+Constants
+A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold
+information which cannot be changed later.
+You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.
+Assigning value to constant in Python
+In Python, constants are usually declared and assigned in a module. Here, the module is a new file containing variables,
+functions, etc which is imported to the main file. Inside the module, constants are written in all capital letters and underscores
+separating the words.
+In the above program, we create a constant.py module file. Then, we assign the constant value to PI and GRAVITY.
+After that, we create a main.py file and import the constant module. Finally, we print the constant value.
+Note: In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them
+from variables, however, it does not actually prevent reassignment.
+Rules and Naming Convention for Variables and constants
+Constant and variable names should have a combination of letters in lowercase (a to z) or uppercase (A to Z) or digits (0 to 9)
+or an underscore (_).

@@ -1,0 +1,32 @@
+{
+    "Sumanth": {
+        "first_name": "Sumanth",
+        "last_name": " Ketharaju",
+        "gmail_id": " SumanthKetharaju@gmail.com"
+    },
+    "Ravindra": {
+        "first_name": "Ravindra",
+        "last_name": " Ketharaju",
+        "gmail_id": " RavindraKetharaju@gmail.com"
+    },
+    "Sunil": {
+        "first_name": "Sunil",
+        "last_name": " Pamujula",
+        "gmail_id": " SunilPamujula@gmail.com"
+    },
+    "Sudheer": {
+        "first_name": "Sudheer",
+        "last_name": " Pamujula",
+        "gmail_id": " SudheerPamujula@gmail.com"
+    },
+    "Seshu": {
+        "first_name": "Seshu",
+        "last_name": " Byna",
+        "gmail_id": " SeshuByna@gmail.com"
+    },
+    "first_name": {
+        "first_name": "first_name",
+        "last_name": " last_name",
+        "gmail_id": " gmail_id"
+    }
+}

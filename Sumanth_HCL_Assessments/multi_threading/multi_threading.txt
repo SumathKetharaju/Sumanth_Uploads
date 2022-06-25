@@ -1,0 +1,384 @@
+Any application which we built that is even moderatory complex is likely to have several tasks which need to be executed.
+while we may be get our job done by running each of the tasks sequentially we can signicantly improve the performance and
+responsiveness of our app if they were run concurrently
+This concurrent execution could occur in two ways
+one method is chunks of each task one at a time and then switch between them regularly and this is knows as multithreading
+and the other approach to execute many of these tasks in parallel this is known as multiprocessing
+
+first we need to import threading library, so this is the one which will include all the operations and class which we need inorder
+to create and to work with threads
+
+threading.active_count() --> to print the total number of thread instances which are currently in active
+threading.enumerate() --> to print the list of all the active threads
+threading.current_thread() --> to print the details of the current threads, it prints current thread object
+threading.current_thread.get_name() --> to print the details of the current threads, it prints name of the current thread
+
+
+threading.Thread --> here we need to pass target function that is name of our function
+
+time module --> used inorder to calculate the time taken for various operations specifically we would like to observe how creating
+multiple threads and processes can effect to time taken to execute certain tasks
+
+sleep --> this will effectively stop the execution of the code for a certain amount of time
+
+active thread is the thread from which the threading.current_thread was invoked was once again the main thread
+
+current_thread is our main thread so even though there is a new thread which we sponned  it was not from that thread,
+that current thread function was invoked not much like before it was still there main thread
+
+x.start() --> this means that the new thread has spanned and it has started execution however the controller of this point
+returns to the main thread of the jupiter notebook in other words the main thread does not wait for the newly sponned one
+inorder to complete execution and it will just go ahead and it continue with it work so the main thread is does not synchronize with
+the newly sponned one
+
+x.join() --> inorder to enable the synchronization we can make use of join function
+ensure that the main thread wait for this thread to execute this completely before proceeding the phone execution we
+invoke the join method,
+
+
+why exactly do we need this synchronization is because the thread which we sponned wil actually return a value which the main thread
+will need in order to proceed with this execution
+
+and in this case the main thread will have to wait for its newly created one to return the results and only then should it go on,
+and inder to enforce such synchronize behaviour we need to make use of the join method
+
+if we use start function one after another it will show run time error because thread can be started only once, so if we want to
+invoke a function twice we will need to create an additional thread
+
+if we do wish to execute a function repeatedly from a thread then we can invoke multiple threads
+
+Deriving the thread class --> At this point we should have a certain degree of familarities with threads in python
+
+we saw earlier that we could not invoke start function of a thread to multiple threads however if we do wish to execute a function
+repeatedly from a thread then we can invoke multiple threads
+
+to caluculate the square of two integers
+within the thread class we are passing tuple containing arguments and if the function access just a single argument then our
+tuple include the argument itself followed by a comma
+
+note --> this terminating comma is only requires functions in the case of single argument
+
+the main thread which will be the one only executing this for loop will wait for sponned thread to finish executing before moving
+along to next iteration of the loop
+
+by creating a class which effectively subclasses the thread class
+so here we define a class called derived thread in this derived the threading.Thread class and there keep in mind there are two functions
+in parent thread class which we can override in this derived class thease are init and run
+
+the run function we define our function which need to be executed in a thread, we just overtiding parent thread class
+
+in most cases when we do invoke a function within a thread then we can simply make use of thread class directly rather than deriving the class
+and then overriding the run method as we have
+
+we have regular class one that does not having thread class
+
+running threads concurrrently --> we have seen how we can spone threds and also seen how we can spon multiple threads
+the true far of multi threading is to for us to be able to run operations in parallel
+
+if we dont use threading --> here one function was executed first and then the main thread waited for that function to be
+executing completely before calling second function
+
+if we use threading -->
+
+t1.start() --> this is starts the execution of greetings_1 and at this point we know from previous example that control passes to the main thread
+this is because we are not invoked t1.join yet infact the next line of code t2.start() will exeute at this point both thread t1 and t2
+will be running concurrently
+
+now we are calling t1.join and t2.join to ensure that the main thread will wait for both of these two executions completely
+
+so by invoking start method back to back we ensure that both the thread t1 and t2 are run concuerrently
+
+here the threads were able to run concurrently and while one thread was sleeping execution could switch to other thread and progress
+could be made with that execution
+
+so eventhough threads will run in parallel we were infact running concurrently and the total execution time has been reduced significantly
+as a result
+
+her helo and world seems to be intelled this is because each of the threads were completing inorder to print out the message into the output
+
+this can be avoided if we use some form of synchronization between different threads
+
+
+race condtions --> by running two threads in parallel each of them printing out message to the console but why we are able to acheivr
+lot of time saving result for the paralle execution we observed the output willbr intelled in the consoleand tgis produced the output
+which was not quite clean this is the very common problem when we use threads in general where they have to be completing specific resource
+they can be issues resourced is not coordinated in the previous example that resource was the console
+
+how this resource synchronization can be acheived when using threads inorder to synchronize specific resource
+
+why this happen is we consider particular thread will read the value of amout before ioncrementing if let say it reach
+the amount as 10000 and then it was increamented to 100001 but before it can perform the increment the other thread goes and read the value
+of 10000 for the varible amount and decides to increament that to 100001as weel so both of the threads will update the calue as 100001
+and this happen they have been teo separete increments from the individual threads but they have been just increment and upgrade as 1
+this is because the seciong thread was updating what was effectively stale value of the global variable and this is know as race condtion
+
+to avoid this we differmt synchronization mechanisms in python
+by taking look of locks
+we will implent locker mechanism inorder to regulate acces the amout to amout variable
+
+thread synchronization --> we saw an example on how multiple threads accessing the same shade variable can run into synchronization issues
+one way to avoid such synchronization issues or race conditions is by implementing locks
+
+here we have dep_lock inorder to regulate access to the amout variable
+the root cause of race condition is which we have encountered is because one of the threads happens to read the value of resource just
+before another thread is about to update the same resource which means that the value read by first thread will be outdated now inorder to avoid this
+we can ensure that both reading and writing operations performed by single thread occur togather that is if  a single thread has acquired
+access to amount variable then no other thread will be able to read variable untill this thread has perform the righr operation
+
+before incrementing the value amount we first acquire the lock so this is the deposite lock which have been passes as argument to the function
+and then once we perform the increment to the amount varoiable we release the lock so the entire access to the amount variable here is
+regulated by means of this deposited lock, so the locking mechanisms are implemented means a there is a single thread which can hold a lock
+at any given point of time and this has thus the effect only asingle thread will be able to increament the value amout at any given time
+as well
+
+so once we have modified a deposite function in this manner we will also need to update two deposite thread functions so that it uses lock this time
+the argument same and this time we will initialize a varible called lock and this is the instance of threading.Lock() then we initialize
+the t1 and t2 with lock instance
+
+here the important thing is here we are paasing same lock instance to both of the threads, so there is a single lock which we need to share
+inoreder to access to the amout variable and this is where the synchronization comes into the picture, let jsut say t1 has acquired
+the lock t2 also try to acquire it then t2 will not given the access to it untill t1 explicitely releases the lock so in this
+way only one of the thread has possession of locking at any given time which means that the updating of the amount variable will be synchronizing
+betwwen the threads
+
+so once thread initialization is complete with the use of locks we will start ecah of the threads jsut as previous and also we ensure that
+the main thread will wait by caaling the join methods
+
+so we have now successfully implemented the lock inorder to regulate access to shared resource and this is how we can solve the problem of synchronization
+however this specific problem wewere working with was rather simple one and has a code gets more and more complicated we will encounter
+various issues when we using locks or any of the other synchroniation mechanism
+
+if we dont use lock.acquire we got a runtime error like release unlocked lock that means the root of the error is that try to release the
+lock which was not acquired in the first place
+
+if we use lock.aquire one after another for main threads fire acuire will give boolean value second acuire will definite
+time untill relase the first acquire
+
+so we clearly acquire a lock which has not been released  and once again this is something which we know we need to account for
+when implementing concurrency using locks so while we can not do a release before an acquire we should not do acquire without
+the corresponding release
+
+and if we dont want our acquire indefinetely for specific lock the we can set timout explicitely in this case first acuire will give True
+second acuire will give false the reason for this the second call waited for totally 3 seconds before giving up since by then it has not
+acquire the lock it returns a false value signifying that lock acquisation was fail and this is one way to avoid infinite loop for
+acuiring locks
+
+they may specific situations where we would like to regulate access to lock to single thread at a time so if a same thread will
+acquire same lock agin we wish to permit that operation and we wish to block other threads acquiring same lock
+
+this is can be avoided by using the concept of reentered lock or RLock this is where the acquiation of same lock by the same
+thread will be the success even that lock has not explicitely released
+
+
+Simulating a deadlock -->
+so far we have seen how we can make use of locks inorder to synchronize access to shared resource when multiple threads
+are trying to access that resource
+
+we also saw how to try to acquire a lock may under going to infinte loop if that lock never is released
+
+now we look for another situation when two separate threads could endup waiting for each other to release a lock on a resource and then endup
+in a deadlock
+
+deadlock can occur when four conditions are met simultaneously
+one of these is mutual exclusion where multiple threads are processes required to access to the same resource and only one of them can access it
+at a time
+then there is hold and wait where as a thread which is holding one lock tries to acquire another one which is held by another thread
+the third condtion is no preaction and this is where all threads have equal rights on a specific resource and each of them could wait for the other
+and none of them can preempt access to that resource
+and the final condtion is a circular wait where we have bunch of threads waiting for each to complete and then it go into an infinite loop
+
+now to simulate this we will be making use of time library and specifically for sleep function in order to put each
+thread sleep for a given amount of time
+
+we will create two resources data one and data two which will be shared by two threads we initialize value data one as 3
+and data two as 5
+
+following that we will define the process which will be executed from threads
+
+this is one called my process and its arguments are two locks lock one and lock two, one of these locks will be used to increment the value of
+data one and other will be used to access and incrementing the value of data two
+
+since both of the variables have been defined outside the scope of this function inorder to update those values we will
+need to declare data one and data two as global variables within this function
+
+following that we will increment the value of data one by exactly one
+
+so to do this we first acquire lock one
+
+following we have written print statemnet incrementing data one and while doing this we will also printout name of the thread which is performing
+this increment operation this is available in the threading.current_thread.name
+
+then we increment the value of data one and then we put the thread to sleep for one sec
+
+following that we perform similar operation on data two here we acquire the lock and this time we acquire the lock two and at this point
+we will observe that the thread has access both of the locks so lock one and lock two will both be in its position
+
+we will then move on print the fact that this thread is incremeting the value of data two and then print out its name and then
+perform the incremnt and then sleep for one secend
+
+so then we end this function by releasing both of the locks which we have acquired
+
+so we call release function for lock one and lock two
+
+so this concludes the definition of our function
+
+following with we will initialize the locks which we will use inorder to update the global variables and these are the
+variables lock one and lock two both of which are of type lock
+
+it not time for to initialize and run the threads which will perform the increment operation on a two shared variables
+
+so we initialize t1 and target function is my process and the arguments are lock one and lock two so this thread will first acquire lock one
+inorder to increment data one and then we will try to acquire lock two to increment data two
+
+we then initialize a second thread again the target is myprocess but we will notice that when we pass along the arguments we first pass along
+lock two and then lock one
+
+so the second thread will acquire lock two inorder to increment data one and then try to acquire lock one to increment data two
+
+what will happen then when we invoke start function for both t1 and t2 inorder to start the threads
+
+t1 will acquire lock one inorder to increment data one and then will sleep for about one second and before the second has elapsed t2 will start
+and acquire lock two inorder once again increment data one and then t2 goes to sleep for one second
+
+so while this happens t1 will try to acquire lock two which is in position of t2 and then t2 will try to acquire lock one which is in t1 position
+
+so this should result in dead lock
+
+we call join functions for each of the threads at the end but we never really get to this point we shall see when we run the program
+
+so immediately we see that thread t1 which has a name thread14 has acquired lock one inorder to increment data one and thread 15 has acquired
+lock two and also to increment data one
+
+now thread14 is waiting for thread15 to release lock two so that it can increment data two and thread15 is waiting for lock one to be released
+by the other thread
+
+we have not set timeout for the acquire and we have also not implemented the some kind of priority one of the threads can preempt the other
+combine with this fact that only one thread can acquire a lock at any given point of time we have a condition where each thread is waiting for
+the other and the consequence is that all the four conditions for a deadlock have been met and we are now in deadlock
+
+and the only way to get out of this by interpting the kernal so this is not ofcourse a sustainable solution since we cant expect humans
+to get invovled for something which may occur quite randomly
+
+so let use see the situation where deadlock will nor occur when we re initialize the shared variables adat one and data two and then recreate
+the locks lock one and lock two
+
+with that we create thread once again but this time we ensure that the arguments which we passed to my process from thread one lock one and
+lock two just as before bur for thread two we effectively reverse the order of the arguments from our previous call so we pass lock one and
+lock two in that order
+
+so when we call thsi start functionecah of these threads let us imagine what will happen thread one will acquire lock one and then increment
+data one and then goto sleep for one second while this is happening thread twowill invoke and acquire lock one and it will need to wait
+for thread one to release it so thread cannot really acquired the lock untill thread one releases lock one
+
+infact when we run this that the first thred which has a name thread16 acuire the lock one to increment the data one and then acquires lock two
+to increment data two it is only at the end of my process where each of the locks are released
+
+so when thread16 has acquired lock one then thraed17 will also try to acquire that same lock but it will need to wait for that lock to be released
+taht is happen only after thread16 acquire the second lock perform the both the increments and then release both the locks at the end this does
+happen eventually and then thread17 is able to perform incremet operation and effectively these threads run in sequence
+
+so this time there was no issue with the updates and the values of data one and data two shold have been incremented correctly whcih
+we can conform by printing out there values and the values of 5 and 7 will show that they haven been incremented twice each once by each
+of our threads so on this specific occation we did not observe any synchronization issues
+
+Avoiding a deadlock -->
+as before there was no synchronization issues when we use multiple threads to appear these values how ever this is purely by chance this is
+because both of our threads started about the same time and then requested to lock in a specific order we can not really expect to this happen
+every time in a large application when multiple locks and multiple resources will be involved and a solution should eleminate atleast one of
+the condition required inorder to trigger a deadlock
+
+so let us redefine myprocess function so just we iterate the four conditions required for a deadlock these are mutual exclusion and hold and wait
+no preaction and circular wait but we are eleminating with our redefinition of the function is the hold and wait conditions
+
+so this definition remains very similar to what it was previously except this time notice that we acquire lock one and with following that
+we perform the same steps as before to increment data one and then before we put in a request to acquire lock two we release lock one
+
+it is only after that where we acquire lock two and then release it once we no longer need it
+so with this little change we have eleminated hold and waitso while one lock is being held we dont wait for another lock to be released
+as a result another condition for a deadlock specifically the circular wait will never occur so the thread will only hold one lock at a time
+and will never request another lock untill it releases a lock which it posesses so we simply moving around one line of code we have
+ensure that they will be no hold and wait and also no circular wait
+
+so once again we reinitialize the data one and data two and then recreate lock one and lock two
+following that we will create same situation as a resulted in a deadlock on the previous occation where we initialize the threads t1 and t2
+and then each of them will call mtprocess and the arguments will be lock one and lock two for t1 and will be lock two and lock one in that
+oder for t2
+
+so when we call the start function for the threads t1 will acquire lock one and t2 will acquire lock two and then each of these threads will release
+the lock which they have acquired before requesting the other lock
+
+so when we run the cell thsi time we see that the increment operations all occur and we dont go into some infinite loop so our apporoch
+to us to deadlock avoided seems to have work
+
+the final conformation though only once we check the values of our two shared variables data one and data two now it dipsly current values
+as 5 and 7
+
+so while multi threading can we extremely powerfull nand safe a lot of time we can also lot of problems not carefull enough deadlocks are
+just one of them and now we have seen how we can code in robust manner inorder to avoid such unpleasent situations
+
+
+semaphores part-1 -->
+so far we have how thread synchronization can be achieved by means of locks
+
+we will now explore another mechanism for such synchronization and this is by use of semaphores
+
+we saw in the case of locks that it is possible for only one thread to acquire a lock at any given point and time
+
+now this is ofcource extremely useful inorder to update variables or resources like lists or other shared data structures where an inabilty to
+synchronize may result in different output then had synchronization in implemented
+
+how ever there are other situations where we want to limit the number of threads which have access to a resource not for the purpose of
+consistency of the data but inorder to limit the parallel usage of a specific resource this could be resource such as CPU, memory and
+printer and soon and this is something which can be achieved by means of semaphores
+
+so how exactly can we create semaphores in python just as with locks there is a semaphore class in the threading library
+
+and now we create a new instance of a semaphore
+
+semaphore happen the one of the oldest synchronization mechanism available and it effectively serves as counter inorder to limit access to
+specific resource
+
+to demonstrate this we will define a new function called my_func
+
+and first thing we will do within it is to acquire the semaphorewhich has been declared
+
+following that we will sleep for fraction of seconds and then we will include two print statements the first of which will display name of the
+thread which has acquired semaphore and second one will show the value associated with the semaphore
+
+again this is effectively shows that the semaphore function as a counter
+
+following that we will sleep for another five seconds and then release the semaphore by calling its release function
+
+so two vocations here for calling semaphore._value will printout the value associated with the semaphore
+
+after it has been acquired and then after it has been released
+
+so let us initialiaze the threads t1 and t2, ecah of which have a target of my_func and then before we start each of these threads
+we will print out the value associated with the semaphore and on running this we see that the initial semaphore value is 1 so this means
+that by default only one thread will be able to acquire the semaphore at any given point and time so in this manner we could say that
+semaphore can work as a lock
+
+noe the initializations are complete it is now time for us to kick off each of the threads but before that we will initiate a time up
+so we call time.time for this and calculate the start time we will then start each of the threads and then by calling the join functions
+we ensure that the main thread wait for then to execute completely we then calculate the end time as well
+
+so let us execute this and we can see the exact sequence of operations
+first thread was be initiated a thread20 which acquired the semaphore and following the initial value of 1 the value associated with our semaphore
+drop to 0 this is because calling acquire function effectively serves as decrement operation on the semaphore value so at this point no other
+thread will be able to acquire the same semaphore so even though thread21 started pretty much right after thread20 did it will need to wait for
+little over 5 seconds for thread22 complete and release the semaphore calling release has the effect of incrementing the value of a semaphore by 1
+
+at which thread21 acquired the semaphore and we can see the value associated with it before and after the release
+
+so even though both of the threads starts at about the same time thread21 had to wait for thread22 to release the semaphore before it could proceed
+and we can confirm this by taking the look at the total time elast for these operations and this was the total over 10.2seconds which is exactly
+what we are expect and each of the threads had run back to back
+
+so at this point we might argue what exactly is the point of having a semaphore is only one thread can acquire a semaphore at any given
+point and time how exactly are the different from locks well for that we need to initialize a semaphore which has an associated value
+greater tah 1 so in this case we create a new semaphore instance with an associated value of 3thsi means that total threads can
+acquire the semaphore at a given time and this is preciseley how we will regulate access to a specific resource so consider we have some
+ecommerse website and we know that the capcity of our website is only about 100000 simultaneous connection
+
+
+

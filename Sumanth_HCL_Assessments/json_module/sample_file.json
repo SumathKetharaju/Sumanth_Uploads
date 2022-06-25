@@ -1,0 +1,17 @@
+{
+    "student":[
+        {
+        "name": "Mahesh Babu",
+        "phone": "9856328659",
+        "email": "MaheshBabu@gmail.com",
+        "has_license": false
+        },
+        {
+        "name": "Ram Charan",
+        "phone": "9875328659",
+        "email": null,
+        "has_license": true
+        }
+    ]
+
+}

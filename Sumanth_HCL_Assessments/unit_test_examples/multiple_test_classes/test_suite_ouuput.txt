@@ -1,0 +1,415 @@
+Microsoft Windows [Version 10.0.19043.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_char (test_suite_sample.TestString) ... ok
+test_upper (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_char (test_suite_sample.TestString) ... ok
+test_upper (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_char (test_suite_sample.TestString) ... ok
+test_upper (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_char (test_suite_sample.TestString) ... ok
+test_upper (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python unittest -v
+python: can't open file 'C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes\unittest': [Errno 2] No such file or directory
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py -v
+test_char (__main__.TestString) ... ok
+test_upper (__main__.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py -v
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_char (test_suite_sample.TestString) ... ok
+test_upper (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py -v
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py -v
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes\test_suite_sample.py", line 19, in <module>
+    unittest.TextTestRunner().run(suite)
+  File "C:\Python\lib\unittest\runner.py", line 176, in run
+    test(result)
+  File "C:\Python\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+  File "C:\Python\lib\unittest\case.py", line 651, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Python\lib\unittest\case.py", line 570, in run
+    testMethod = getattr(self, self._testMethodName)
+AttributeError: 'TestUpperCase' object has no attribute 'runTest'
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_sample.py -v
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_calculator.py -v
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_calculator.py -v
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_calculator.py -v
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_suite_calculator.py -v
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+...Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes\test_make_suites.py", line 40, in <module>
+    unittest.TextTestRunner().run(suite)
+  File "C:\Python\lib\unittest\runner.py", line 176, in run
+    test(result)
+  File "C:\Python\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+  File "C:\Python\lib\unittest\case.py", line 651, in __call__
+    return self.run(*args, **kwds)
+  File "C:\Python\lib\unittest\case.py", line 570, in run
+    testMethod = getattr(self, self._testMethodName)
+AttributeError: 'SimpleTest' object has no attribute 'runTest'
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_make_suites.py -v
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_more_verbosity.py -v
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+Errors are --> []
+
+Failed test cases are --> []
+
+skipped test cases  are --> []
+
+Number of tests are --> 7
+
+Was it a Successful test --> True
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_more_verbosity.py -v
+test_1 (__main__.SimpleTest) ... ok
+test_2 (__main__.SimpleTest) ... ok
+test_3 (__main__.SimpleTest) ... ok
+test_4 (__main__.SimpleTest) ... ok
+runTest (__main__.TestMul) ... ok
+runTest (__main__.TestDiv) ... ok
+runTest (__main__.TestAdd) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK
+Errors are --> []
+
+Failed test cases are --> []
+
+skipped test cases  are --> []
+
+Number of tests are --> 7
+
+Was it a Successful test --> True
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_more_verbosity.py -v
+test_1 (__main__.SimpleTest) ... ok
+test_2 (__main__.SimpleTest) ... ok
+test_3 (__main__.SimpleTest) ... ok
+test_4 (__main__.SimpleTest) ... ok
+runTest (__main__.TestMul) ... FAIL
+runTest (__main__.TestDiv) ... ERROR
+runTest (__main__.TestAdd) ... skipped 'This is only for Temporary'
+
+======================================================================
+ERROR: runTest (__main__.TestDiv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes\test_more_verbosity.py", line 20, in runTest
+    self.assertEqual(20 // 0,  6)
+ZeroDivisionError: integer division or modulo by zero
+
+======================================================================
+FAIL: runTest (__main__.TestMul)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes\test_more_verbosity.py", line 7, in runTest
+    self.assertEqual(5 * 4, 2)
+AssertionError: 20 != 2
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+FAILED (failures=1, errors=1, skipped=1)
+Errors are --> [(<__main__.TestDiv testMethod=runTest>, 'Traceback (most recent call last):\n  File "C:\\Users\\SUMANTH\\Desktop\\Sumanth_HCL_Assessments\\unit_test_examples\\multiple_test_classes\\test_more_verbosity.py", line 20, in runTest\n    self.assertEqual(20 // 0,  6)\nZeroDivisionError: integer division or modulo by zero\n')]
+
+Failed test cases are --> [(<__main__.TestMul testMethod=runTest>, 'Traceback (most recent call last):\n  File "C:\\Users\\SUMANTH\\Desktop\\Sumanth_HCL_Assessments\\unit_test_examples\\multiple_test_classes\\test_more_verbosity.py", line 7, in runTest\n    self.assertEqual(5 * 4, 2)\nAssertionError: 20 != 2\n')]
+
+skipped test cases  are --> [(<__main__.TestAdd testMethod=runTest>, 'This is only for Temporary')]
+
+Number of tests are --> 7
+
+Was it a Successful test --> False
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python test_more_verbosity.py -v
+test_1 (__main__.SimpleTest) ... ok
+test_2 (__main__.SimpleTest) ... ok
+test_3 (__main__.SimpleTest) ... ok
+test_4 (__main__.SimpleTest) ... ok
+runTest (__main__.TestMul) ... ok
+runTest (__main__.TestDiv) ... ok
+runTest (__main__.TestAdd) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
+Errors are --> []
+
+Failed test cases are --> []
+
+skipped test cases  are --> []
+
+Number of tests are --> 7
+
+Was it a Successful test --> True
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v
+test_1 (test_make_suites.SimpleTest) ... ok
+test_2 (test_make_suites.SimpleTest) ... ok
+test_3 (test_make_suites.SimpleTest) ... ok
+test_4 (test_make_suites.SimpleTest) ... ok
+runTest (test_make_suites.TestAdd) ... ok
+runTest (test_make_suites.TestDiv) ... ok
+runTest (test_make_suites.TestMul) ... ok
+test_1 (test_more_verbosity.SimpleTest) ... ok
+test_2 (test_more_verbosity.SimpleTest) ... ok
+test_3 (test_more_verbosity.SimpleTest) ... ok
+test_4 (test_more_verbosity.SimpleTest) ... ok
+runTest (test_more_verbosity.TestAdd) ... ok
+runTest (test_more_verbosity.TestDiv) ... ok
+runTest (test_more_verbosity.TestMul) ... ok
+runTest (test_suite_calculator.TestAddition) ... ok
+runTest (test_suite_calculator.TestDivision) ... ok
+runTest (test_suite_calculator.TestMultiplication) ... ok
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.003s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -k run
+runTest (test_make_suites.TestAdd) ... ok
+runTest (test_make_suites.TestDiv) ... ok
+runTest (test_make_suites.TestMul) ... ok
+runTest (test_more_verbosity.TestAdd) ... ok
+runTest (test_more_verbosity.TestDiv) ... ok
+runTest (test_more_verbosity.TestMul) ... ok
+runTest (test_suite_calculator.TestAddition) ... ok
+runTest (test_suite_calculator.TestDivision) ... ok
+runTest (test_suite_calculator.TestMultiplication) ... ok
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.004s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -k test
+test_1 (test_make_suites.SimpleTest) ... ok
+test_2 (test_make_suites.SimpleTest) ... ok
+test_3 (test_make_suites.SimpleTest) ... ok
+test_4 (test_make_suites.SimpleTest) ... ok
+runTest (test_make_suites.TestAdd) ... ok
+runTest (test_make_suites.TestDiv) ... ok
+runTest (test_make_suites.TestMul) ... ok
+test_1 (test_more_verbosity.SimpleTest) ... ok
+test_2 (test_more_verbosity.SimpleTest) ... ok
+test_3 (test_more_verbosity.SimpleTest) ... ok
+test_4 (test_more_verbosity.SimpleTest) ... ok
+runTest (test_more_verbosity.TestAdd) ... ok
+runTest (test_more_verbosity.TestDiv) ... ok
+runTest (test_more_verbosity.TestMul) ... ok
+runTest (test_suite_calculator.TestAddition) ... ok
+runTest (test_suite_calculator.TestDivision) ... ok
+runTest (test_suite_calculator.TestMultiplication) ... ok
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.010s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -k 1
+test_1 (test_make_suites.SimpleTest) ... ok
+runTest (test_make_suites.TestAdd) ... ok
+runTest (test_make_suites.TestDiv) ... ok
+runTest (test_make_suites.TestMul) ... ok
+test_1 (test_more_verbosity.SimpleTest) ... ok
+runTest (test_more_verbosity.TestAdd) ... ok
+runTest (test_more_verbosity.TestDiv) ... ok
+runTest (test_more_verbosity.TestMul) ... ok
+runTest (test_suite_calculator.TestAddition) ... ok
+runTest (test_suite_calculator.TestDivision) ... ok
+runTest (test_suite_calculator.TestMultiplication) ... ok
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.006s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -k _1
+test_1 (test_make_suites.SimpleTest) ... ok
+runTest (test_make_suites.TestAdd) ... ok
+runTest (test_make_suites.TestDiv) ... ok
+runTest (test_make_suites.TestMul) ... ok
+test_1 (test_more_verbosity.SimpleTest) ... ok
+runTest (test_more_verbosity.TestAdd) ... ok
+runTest (test_more_verbosity.TestDiv) ... ok
+runTest (test_more_verbosity.TestMul) ... ok
+runTest (test_suite_calculator.TestAddition) ... ok
+runTest (test_suite_calculator.TestDivision) ... ok
+runTest (test_suite_calculator.TestMultiplication) ... ok
+runTest (test_suite_sample.TestString) ... ok
+runTest (test_suite_sample.TestUpperCase) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.006s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -q
+----------------------------------------------------------------------
+Ran 19 tests in 0.001s
+
+OK
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -t
+usage: python.exe -m unittest [-h] [-v] [-q] [--locals] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [tests ...]
+python.exe -m unittest: error: unrecognized arguments: -t
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>python -m unittest -v -p
+usage: python.exe -m unittest [-h] [-v] [-q] [--locals] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [tests ...]
+python.exe -m unittest: error: unrecognized arguments: -p
+
+C:\Users\SUMANTH\Desktop\Sumanth_HCL_Assessments\unit_test_examples\multiple_test_classes>

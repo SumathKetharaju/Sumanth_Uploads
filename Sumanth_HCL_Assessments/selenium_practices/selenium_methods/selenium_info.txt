@@ -1,0 +1,341 @@
+https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.support.expected_conditions --> important link
+step1 --> First we need to set chromedriver executable path in a driver object
+
+step2 --> We can open a browser and navigate to an application with the help of Selenium webdriver in Python. This is
+done with the help of the get method.
+While automating a test, the very first step that we create is launching an application with a URL.
+For a get method, the webdriver waits till the page is completely loaded before moving to the next step.
+
+step2 --> Once we navigate to a webpage, we have to interact with the web elements available on the page like clicking a
+link/button, entering text within an edit box, and so on to complete our automation test case.
+
+step4 --> For this, our first job is to identify the element. We can use the id or Xpath or name or class name or
+link test or partial link test or tag name or css selector attributes for an element for its identification and utilize
+the methods like find_element_by_id, find_element_by_Xpath, find_element_by_name. find_element_by_class_name, find_element_by_link_test
+find_element_by_partial_link_test, find_element_by_tag_name, find_element_by_css_selector.
+
+With this, the first element with the matching value of the those attribute is returned.
+In case there is no element with the matching value of the those attribute, NoSuchElementException shall be thrown.
+
+name --> It will be directly available on html element like name=""
+
+id --> It will be directly available on html element like id=""
+
+class_name --> It will be directly available on html element like class_name=""
+
+link_test --> It will be directly available on html element between arrows >some_info<, ex:<href="some_info" title="some_title", >link_test<
+
+partial_link_test --> It will be directly available on html element between arrows >some_info<, ex:<href="some_info" title="some_title", >link_test<
+
+tagname --> It will be directly available on html element after the first left arrow like <tagnmae ex:<input
+
+css selector -->
+Rules to create CSS Expression
+The rules to create a css expression are discussed below:
+•	To identify the element with css, the expression should be tagname[attribute='value'].The edit box highlighted in
+the above image has a name attribute with value search, the css expression should be input[name='search'].
+
+We can also specifically use the id attribute to create a css expression.
+•	With id, the format of a css expression should be tagname#id. For example, input#txt [here input is the tagname and
+the txt is the value of the id attribute].
+
+•	With class, the format of css expression should be tagname.class. For example, input.cls-txt [here input is the
+tagname and the cls-txt is the value of the class attribute].
+
+•	If there are n children of a parent element, and we want to identify the nth child, the css expression should have nth-of –type(n).
+
+In the above code, if we want to identify the fourth li childof ul[Questions and Answers],
+the css expression should be ul.reading li:nth-of-type(4).
+Similarly, to identify the last child, the css expression should be ul.reading li:last-child.
+
+For attributes whose values are dynamically changing, we can use ^= to locate an element whose attribute value starts
+with a particular text. For example, input[name^='qa'] Here, input is the tagname and the value of the name attribute starts with qa.
+
+For attributes whose values are dynamically changing, we can use $= to locate an element whose attribute value ends with
+a particular text. For example, input[class$='txt'] Here, input is the tagname and the value of the class attribute ends with txt.
+
+For attributes whose values are dynamically changing, we can use *= to locate an element whose attribute value contains a
+specific sub-text. For example, input[name*='nam'] Here, input is the tagname and the value of the name attribute contains the sub-text nam.
+
+
+xpath -->
+
+Rules to create Xpath Expression
+The rules to create a xpath expression are discussed below:
+•	To identify the element with xpath, the expression should be //tagname[@attribute='value'].
+
+There can be two types of xpath – relative and absolute.
+The absolute xpath begins with / symbol and starts from the root node upto the element that we want to identify.
+For example, /html/body/div[1]/div/div[1]/a
+
+•	The relative xpath begins with // symbol and does not start from the root node.
+For example, //img[@alt='tutorialspoint']
+
+
+Functions -->
+There are also functions available which help to frame relative xpath expressions.
+
+text() --> It is used to identify an element with its visible text on the page.
+The xpath expression is as follows:--> //*[text()='Home'].
+
+starts-with() -->It is used to identify an element whose attribute value begins with a specific text.
+This function is normally used for attributes whose value changes on each page load.
+Let us see the html of the link Q/A:--> //a[starts-with(@title, 'Questions &')].
+
+contains() --> It identifies an element whose attribute value contains a sub-text.
+This function is normally used for attributes whose value changes on each page load.
+The xpath expression is as follows:--> //a[contains(@title, 'Questions & Answers')].
+
+To capture multiple elements -->
+we will learn how to identify multiple elements by various options. Let us begin by understanding identifying multiple elements by attributes.
+step1 --> First we need to set chromedriver executable path in a driver object
+
+step2 --> We can open a browser and navigate to an application with the help of Selenium webdriver in Python. This is
+done with the help of the get method.
+While automating a test, the very first step that we create is launching an application with a URL.
+For a get method, the webdriver waits till the page is completely loaded before moving to the next step.
+
+step2 --> Once we navigate to a webpage, we have to interact with the web elements available on the page like clicking a
+link/button, entering text within an edit box, and so on to complete our automation test case.
+
+step4 --> For this, our first job is to identify the element. We can use the id or Xpath or name or class name or
+link test or partial link test or tag name or css selector attributes for an element for its identification and utilize
+the methods like find_elements_by_id, find_elements_by_Xpath, find_elements_by_name. find_elements_by_class name, find_elements_by_link test
+find_elements_by_partial link test, find_elements_by_tag name, find_elements_by_css selector.With this, all the elements with the
+matching value of the those attributes are returned to the form of list.
+
+Explicit and Implicit Wait -->
+Let us understand what an explicit wait in the Selenium Webdriver is.
+
+Explicit Wait -->
+An explicit wait is applied to instruct the webdriver to wait for a specific condition before moving to the other steps in the automation script.
+Explicit wait is implemented using the WebDriverWait class along with expected_conditions.
+The expected_conditions class has a group of pre-built conditions to be used along with the WebDriverWait class.
+
+Pre-built Conditions -->
+The pre-built conditions which are to be used along with the WebDriverWait class are given below:
+•	alert_is_present
+•	element_selection_state_to_be
+•	presence_of_all_elements_located
+•	element_located_to_be_selected
+•	text_to_be_present_in_element
+•	text_to_be_present_in_element_value
+•	frame_to_be_available_and_switch_to_it
+•	element_located_to_be_selected
+•	visibility_of_element_located
+•	presence_of_element_located
+•	title_is
+•	title_contains
+•	visibility_of
+•	staleness_of
+•	element_to_be_clickable
+•	invisibility_of_element_located
+•	element_to_be_selected
+
+7.39. Expected conditions Support¶
+selenium.webdriver.support.expected_conditions.alert_is_present()
+selenium.webdriver.support.expected_conditions.all_of(*expected_conditions) --> An expectation that all of multiple
+expected conditions is true. Equivalent to a logical ‘AND’. Returns: When any ExpectedCondition is not met: False.
+When all ExpectedConditions are met: A List with each ExpectedCondition’s return value.
+
+selenium.webdriver.support.expected_conditions.any_of(*expected_conditions) -->
+An expectation that any of multiple expected conditions is true. Equivalent to a logical ‘OR’. Returns results of the
+first matching condition, or False if none do.
+
+selenium.webdriver.support.expected_conditions.element_attribute_to_include(locator, attribute_) --> An expectation for
+checking if the given attribute is included in the specified element. locator, attribute
+
+selenium.webdriver.support.expected_conditions.element_located_selection_state_to_be(locator, is_selected) --> An expectation
+to locate an element and check if the selection state specified is in that state. locator is a tuple of (by, path) is_selected is a boolean
+
+selenium.webdriver.support.expected_conditions.element_located_to_be_selected(locator) --> An expectation for the element
+to be located is selected. locator is a tuple of (by, path)
+
+selenium.webdriver.support.expected_conditions.element_selection_state_to_be(element, is_selected) --> An expectation for
+checking if the given element is selected. element is WebElement object is_selected is a Boolean.”
+
+selenium.webdriver.support.expected_conditions.element_to_be_clickable(mark) --> An Expectation for checking an element
+is visible and enabled such that you can click it. element is either a locator (text) or an WebElement
+
+selenium.webdriver.support.expected_conditions.element_to_be_selected(element) --> An expectation for checking the selection
+is selected. element is WebElement object
+
+selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it(locator) --> An expectation for
+checking whether the given frame is available to switch to. If the frame is available it switches the given driver to the specified frame.
+
+selenium.webdriver.support.expected_conditions.invisibility_of_element(element) --> An Expectation for checking that an
+element is either invisible or not present on the DOM. element is either a locator (text) or an WebElement
+
+selenium.webdriver.support.expected_conditions.invisibility_of_element_located(locator) --> An Expectation for checking
+that an element is either invisible or not present on the DOM.locator used to find the element
+
+selenium.webdriver.support.expected_conditions.new_window_is_opened(current_handles) --> An expectation that a new window
+will be opened and have the number of windows handles increase
+
+selenium.webdriver.support.expected_conditions.none_of(*expected_conditions)
+An expectation that none of 1 or multiple expected conditions is true. Equivalent to a logical ‘NOT-OR’. Returns a Boolean
+
+selenium.webdriver.support.expected_conditions.number_of_windows_to_be(num_windows) --> An expectation for the number of
+windows to be a certain value.
+
+selenium.webdriver.support.expected_conditions.presence_of_all_elements_located(locator) --> An expectation for checking
+that there is at least one element present on a web page. locator is used to find the element returns the list of
+WebElements once they are located
+
+selenium.webdriver.support.expected_conditions.presence_of_element_located(locator) --> An expectation for checking that
+an element is present on the DOM of a page. This does not necessarily mean that the element is visible. locator - used
+to find the element returns the WebElement once it is located
+
+selenium.webdriver.support.expected_conditions.staleness_of(element) --> Wait until an element is no longer attached to
+the DOM. element is the element to wait for. returns False if the element is still attached to the DOM, true otherwise.
+
+selenium.webdriver.support.expected_conditions.text_to_be_present_in_element(locator, text_) --> An expectation for checking
+if the given text is present in the specified element. locator, text
+
+selenium.webdriver.support.expected_conditions.text_to_be_present_in_element_attribute(locator, attribute_, text_) --> An
+expectation for checking if the given text is present in the element’s attribute. locator, attribute, text
+
+selenium.webdriver.support.expected_conditions.text_to_be_present_in_element_value(locator, text_) --> An expectation for
+checking if the given text is present in the element’s value. locator, text
+
+selenium.webdriver.support.expected_conditions.title_contains(title) --> An expectation for checking that the title contains
+a case-sensitive substring. title is the fragment of title expected returns True when the title matches, False otherwise
+
+selenium.webdriver.support.expected_conditions.title_is(title) --> An expectation for checking the title of a page. title
+is the expected title, which must be an exact match returns True if the title matches, false otherwise.
+
+selenium.webdriver.support.expected_conditions.url_changes(url) --> An expectation for checking the current url. url is
+the expected url, which must not be an exact match returns True if the url is different, false otherwise.
+
+selenium.webdriver.support.expected_conditions.url_contains(url) --> An expectation for checking that the current url contains
+a case-sensitive substring. url is the fragment of url expected, returns True when the url matches, False otherwise
+
+selenium.webdriver.support.expected_conditions.url_matches(pattern) --> An expectation for checking the current url. pattern
+is the expected pattern, which must be an exact match returns True if the url matches, false otherwise.
+
+selenium.webdriver.support.expected_conditions.url_to_be(url) --> An expectation for checking the current url. url is the
+expected url, which must be an exact match returns True if the url matches, false otherwise.
+
+selenium.webdriver.support.expected_conditions.visibility_of(element) --> An expectation for checking that an element, known
+to be present on the DOM of a page, is visible. Visibility means that the element is not only displayed but also has a height
+and width that is greater than 0. element is the WebElement returns the (same) WebElement once it is visible
+
+selenium.webdriver.support.expected_conditions.visibility_of_all_elements_located(locator) --> An expectation for checking
+that all elements are present on the DOM of a page and visible. Visibility means that the elements are not only displayed
+but also has a height and width that is greater than 0. locator - used to find the elements returns the list of WebElements
+once they are located and visible
+
+selenium.webdriver.support.expected_conditions.visibility_of_any_elements_located(locator) --> An expectation for checking
+that there is at least one element visible on a web page. locator is used to find the element returns the list of WebElements
+once they are located
+
+selenium.webdriver.support.expected_conditions.visibility_of_element_located(locator) --> An expectation for checking that
+an element is present on the DOM of a page and visible. Visibility means that the element is not only displayed but also
+has a height and width that is greater than 0. locator - used to find the element returns the WebElement once it is located and visible
+
+Let us wait for the text - Team @ Tutorials Point which becomes available on clicking the link - Team on the page.
+
+Implicit Wait -->
+An implicit wait is applied to instruct the webdriver for polling the DOM (Document Object Model) for a specific amount
+of time while making an attempt to identify an element which is currently unavailable.
+
+The default value of the implicit wait time is 0. Once a wait time is set, it remains applicable through the entire life
+of the webdriver object. If an implicit wait is not set and an element is still not present in DOM, an exception is thrown.
+
+The syntax for the implicit wait is as follows: --> driver.implicitly_wait(5)
+
+Here, a wait time of five seconds is applied to the webdriver object.
+
+
+
+
+click()
+send_keys()
+get_attribute("value")
+title
+quit()
+close()
+len() --> to count the elements with the matching value of the those attributes are returned from elements that we are findout
+text
+
+
+
+selenium components -->
+Components of Selenium
+
+Selenium IDE --> Selenium IDE (Integrated Development Environment) is the major tool in the Selenium Suite.
+It is a complete integrated development environment (IDE) for Selenium tests. It is implemented as a Firefox Add-On and
+as a Chrome Extension. It allows for recording, editing and debugging of functional tests. It was previously known as Selenium Recorder.
+
+Selenium RC --> Selenium Remote Control (RC) is a server, written in Java, that accepts commands for the browser via HTTP.
+RC makes it possible to write automated tests for a web application in any programming language, which allows for better
+integration of Selenium in existing unit test frameworks. To make writing tests easier, Selenium project currently provides
+client drivers for PHP, Python, Ruby, .NET, Perl and Java. The Java driver can also be used with JavaScript (via the Rhino engine).
+An instance of selenium RC server is needed to launch html test case – which means that the port should be different for
+each parallel run. However, for Java/PHP test case only one Selenium RC instance needs to be running continuously.
+
+Selenium Web driver --> Selenium WebDriver is the successor to Selenium RC. Selenium WebDriver accepts commands
+(sent in Selenese, or via a Client API) and sends them to a browser.
+This is implemented through a browser-specific browser driver, which sends commands to a browser and retrieves results.
+Most browser drivers actually launch and access a browser application (such as Firefox, Google Chrome, Internet Explorer,
+Safari, or Microsoft Edge); there is also an HtmlUnit browser driver, which simulates a browser using the headless browser HtmlUnit.
+
+Selenium WebDriver does not need a special server to execute tests. Instead, the WebDriver directly starts a browser
+instance and controls it. However, Selenium Grid can be used with WebDriver to execute tests on remote systems (see below).
+Where possible, WebDriver uses native operating system level functionality rather than browser-based JavaScript commands to
+drive the browser. This bypasses problems with subtle differences between native and JavaScript commands, including security restrictions.
+
+
+Selenium GRID --> Selenium Grid is a server that allows tests to use web browser instances running on remote machines.
+With Selenium Grid, one server acts as the hub. Tests contact the hub to obtain access to browser instances. The hub has
+a list of servers that provide access to browser instances (WebDriver nodes), and lets tests use these instances.
+Selenium Grid allows running tests in parallel on multiple machines and to manage different browser versions and browser
+configurations centrally (instead of in each individual test).
+
+The ability to run tests on remote browser instances is useful to spread the load of testing across several machines and
+to run tests in browsers running on different platforms or operating systems. The latter is particularly useful in
+cases where not all browsers to be used for testing can run on the same platform.
+
+
+Features of selenium -->
+Open Source and Portable – Selenium is an open source and portable Web testing Framework.
+
+Combination of tool and DSL – Selenium is combination of tools and DSL (Domain Specific Language) in order to carry out
+various types of tests.
+
+Easier to understand and implement – Selenium commands are categorized in terms of different classes which make it
+easier to understand and implement.
+
+Reduce test execution time – Selenium supports parallel test execution that reduce the time taken in executing parallel tests.
+
+Lesser resources required – Selenium requires lesser resources when compared to its competitors like UFT, RFT, etc.
+
+Supports Multiple Programming Languages – C#, Java, Python, PHP, Ruby, Perl, and JavaScript
+
+Supports Multiple Operating Systems – Android, iOS, Windows, Linux, Mac, Solaris.
+
+Supports Multiple Browsers – Google Chrome, Mozilla Firefox, Internet Explorer, Edge, Opera, Safari, etc.
+
+Parallel Test Execution – It also supports parallel test execution which reduces time and increases the efficiency of tests.
+
+
+
+Limitations of selenium -->
+
+No support for desktop applications – Selenium does not support testing for desktop applications.
+
+Expertise – Selenium requires expertise of your team — and resources to manage.
+
+Maintenance and Scalability – Selenium is a maintenance-heavy framework — and is difficult to scale as one grows.
+
+Open Source Forums – Since Selenium is open source software, one has to rely on community forums to get your technical issues resolved.
+
+No support for REST and SOAP Platforms – We can’t perform automation tests on web services like SOAP or REST using Selenium.
+
+No Reporting capability – Selenium does not have any inbuilt reporting capability, one has to rely on plug-ins like
+JUnit and TestNG for test reports.
+
+Image Testing – It is not possible to perform testing on images. One needs to integrate Selenium with Sikuli for image testing.
+
+The output shows the message like Process with exit code 0. This means that the above Python code executed successfully.
+
